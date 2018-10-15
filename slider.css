@@ -14,10 +14,11 @@
 		.belminuten{	
 			display: flex;
 			justify-content: center;
-			font-family: 'Lettertype/Ben2010-Bold', sans-serif;
+			font-family: 'Heebo Black', sans-serif;
 			font-size: 300%;
 			color: #00AEEF;
 		}
+
 	.deslider{
 		width: 100%;
 		display: grid;
@@ -46,10 +47,16 @@
 		.slider::-webkit-slider-thumb,.slider2::-webkit-slider-thumb {
 		    -webkit-appearance: none; /* Override default look */
 		    appearance: none;
-		    background: #00AEEF;
 		    width: 100px; /* Set a specific slider handle width */
 		    height: 40px; /* Slider handle height */
 		    cursor: pointer; /* Cursor on hover */
+		}
+		.slider::-webkit-slider-thumb{
+			background: #00AEEF;
+		}
+
+		.slider2::-webkit-slider-thumb{
+			background: #e8ddb5;
 		}
 
 		.slider::-moz-range-thumb,.slider2::-moz-range-thumb {
