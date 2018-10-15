@@ -18,6 +18,10 @@ body{
 		margin-top: 6px;
 	}
 
+	img:hover{
+		cursor: pointer;
+	}
+
 	.content{
 		display: grid;
 		grid-template-rows: 0.5fr 0.5fr 10fr;
@@ -77,6 +81,14 @@ body{
 						width: 60%;
 					}
 
+						.completed{
+							background-image: url("../Afbeeldingen/check.png");
+							background-color: #00AEEF;
+							background-position: right;
+							background-size: contain;
+							background-repeat: no-repeat;
+						}
+
 						.active{
 							background-color: #00AEEF;
 						}
@@ -85,11 +97,23 @@ body{
 							background-color: rgba(0,0,0,0.1);
 						}
 
-				.opties{
+				.persoonlijk{
 					display: grid;
-					grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
-					grid-template-rows: 0.3fr 3fr 1fr;
+					background-color: #00AEEF;
+					height: 50%;
 				}
+
+					h1{
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 220%;
+					}
+
+						span{
+							color: white;
+							margin:0% 1%;
+						}
 
 					h3{
 						display: flex;
