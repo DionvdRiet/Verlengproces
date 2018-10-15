@@ -6,13 +6,13 @@
 </head>
 <body>
 	<div class="grid">
-		<div class="informatie">
+		<div class="informatie" id="informatie">
 			<div class="belminuten"><p id="tekst"><span id="demo"></span> belminuten</p></div>
 			 <div class="belminuten"><p id="tekst2"><span id="demo2"></span> Mb</p></div>
 		</div>
 		<div class="deslider">
-				<input type="range" min="0" max="600" value="300" step="300" class="slider" id="myRange">
-				<input type="range" min="1000" max="10000" value="2000" step="1000" class="slider2" id="myRange2">
+				<input type="range" min="0" max="600" value="300" step="300" class="slider" onchange="changeInputB(this);" id="myRange" >
+				<input type="range" min="1000" max="10000" value="2000" step="1000" class="slider2" id="myRange2" onchange="changeInputM(this);">
 		</div>
 		<div class="ruimte"></div>
 	</div>
