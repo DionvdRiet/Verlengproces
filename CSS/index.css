@@ -1,0 +1,45 @@
+body{
+	margin:0;
+}
+
+.grid{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+	.content{
+		display: grid;
+		grid-template-rows: 0.5fr 0.5fr 10fr;
+		grid-column: 2/3;
+
+	}
+
+		.ben-nav, .persoonlijk-nav{
+			display: flex;
+			justify-content: center;
+			color: white;
+			text-decoration: none;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+			padding: 0px 2%;
+		}
+
+		.ben-nav{
+			grid-row:1/2;
+			background-color: #00AEEF;
+		}
+
+		.persoonlijk-nav{
+			grid-row:2/3;
+			background-color: black;
+		}
+
+		.informatie{
+			grid-row:3/4;
+			background-color: rgba(240,240,240.1);
+		}
