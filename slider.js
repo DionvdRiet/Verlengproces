@@ -8,11 +8,13 @@ output2.innerHTML = slider2.value;
 
 
 slider.oninput = function() {
-    output.innerHTML = this.value;
 
-    if(output >= 600){
+    if(output == 599){
 	document.getElementById('tekst').innerHTML= "In Stock";
 	}
+
+    output.innerHTML = this.value;
+
 }
 
 slider2.oninput = function() {
@@ -20,6 +22,32 @@ slider2.oninput = function() {
 
     if(output2 ==300){
 	document.getElementById('tekst2').innerHTML= "In Stock";
+	}
+}
+
+function changeInputB(x)
+{
+	// document.getElementById("informatie").style.backgroundColor = "red";
+
+	if (x.value >= 599){
+		document.getElementById('tekst').innerHTML= "Onbeperkt belminuten";
+	}
+
+	else{
+		document.getElementById('tekst').innerHTML= x.value + " belminuten";
+	}
+}
+
+function changeInputM(y)
+{
+	// document.getElementById("informatie").style.backgroundColor = "red";
+
+	if (y.value >= 599){
+		document.getElementById('tekst2').innerHTML= "Onbeperkt Mb";
+	}
+
+	else{
+		document.getElementById('tekst2').innerHTML= y.value + " belminuten";
 	}
 }
 
