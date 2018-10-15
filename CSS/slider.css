@@ -1,6 +1,13 @@
 *{
 	margin: 0;
+
 }
+
+@font-face {
+    font-family: BenFont;
+    src: url(../Lettertype/Ben2010-Bold.ttf);
+}
+
 .grid{
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
@@ -9,15 +16,15 @@
 
 	.informatie{
 		grid-row:1/2;
-	}		
+	}
 
-		.belminuten{	
-			display: flex;
-			justify-content: center;
-			font-family: 'Lettertype/Ben2010-Bold', sans-serif;
-			font-size: 300%;
-			color: #00AEEF;
-		}
+.belminuten {
+    display: flex;
+    justify-content: center;
+    font-family: BenFont, Papyrus;
+    font-size: 300%;
+    color: #00AEEF;
+}
 	.deslider{
 		width: 100%;
 		display: grid;
