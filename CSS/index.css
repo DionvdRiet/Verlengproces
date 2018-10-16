@@ -107,7 +107,7 @@ body{
                 {
                     display: grid;
                     background-color: #00AEEF;
-                    height: 50%;
+                    height: 60%;
                 }
                     h1 
                     {
@@ -143,11 +143,10 @@ body{
 					.sim-only{
 						grid-column: 2/3;
 						height: 350px;
-<<<<<<< HEAD
 						background-image: url("../Afbeeldingen/sim.svg");
-=======
-						background-image: url("../Afbeeldingen/simcard-blue.svg");
->>>>>>> origin/master
+
+						/*background-image: url("../Afbeeldingen/simcard-blue.svg");*/
+
 						background-repeat: no-repeat;
 						background-position: 50% 30%;
 						background-size: 80%;;
@@ -164,3 +163,81 @@ body{
 						background-position: 50% 30%;
 						background-size: 80%;;
 					}
+
+						.completed{
+							background-image: url("../Afbeeldingen/check.png");
+							background-color: #00AEEF;
+							background-position: right;
+							background-size: contain;
+							background-repeat: no-repeat;
+						}
+
+						.active{
+							background-color: #00AEEF;
+						}
+
+						.inactive{
+							background-color: rgba(0,0,0,0.1);
+						}
+
+				.persoonlijk{
+					display: grid;
+					grid-template-rows: 1fr 0.3fr 3fr 1fr;
+					background-color: #00AEEF;
+					height: 60%;
+				}
+
+					h1{
+						grid-row:1/2;
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 220%;
+					}
+
+						span{
+							color: white;
+							margin:0% 1%;
+						}
+
+					h2{
+						grid-row:2/3;
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 120%;
+					}
+
+					h3{
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						text-align: bottom;
+						margin-top: 110%;
+						font-size: 140%;
+
+					}
+
+					.sim-opties{
+						display: grid;
+						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+						grid-row:3/4;
+					}
+
+						.sim-opties > div{
+							display: flex;
+							background-color: white;
+							border: 1px solid rgba(0,0,0,0.1);
+						}
+
+						.belminuten{
+							grid-column: 2/3;
+						}
+
+						.internet{
+							grid-column: 3/4;
+						}
+
+						.prijs{
+							grid-column: 4/5;
+						}
