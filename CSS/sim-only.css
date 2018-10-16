@@ -1,0 +1,157 @@
+@font-face {
+    font-family: BenFont;
+    src: url(../Lettertype/Ben2010-Bold.ttf);
+}
+
+body{
+	margin:0;
+}
+
+.grid{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3.5fr 1fr;
+}
+
+	img{
+		margin-top: 6px;
+	}
+
+	img:hover{
+		cursor: pointer;
+	}
+
+	.content{
+		display: grid;
+		grid-template-rows: 0.5fr 0.5fr 10fr;
+		grid-column: 2/3;
+
+	}
+		.ben-nav, .persoonlijk-nav{
+			display: flex;
+			justify-content: center;
+			color: white;
+			text-decoration: none;
+			font-family: "Benfont", sans-serif;
+			font-size: 100%;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+			padding: 1.2%;
+		}
+
+		.ben-nav{
+			grid-row:1/2;
+			background-color: #00AEEF;
+		}
+
+		.persoonlijk-nav{
+			grid-row:2/3;
+			background-color: black;
+		}
+
+		.informatie{
+			grid-row:3/4;
+			/*background-color: rgba(240,240,240.1);*/
+		}
+
+				title{
+					display: flex;
+					justify-content: center;
+					font-family:  "Benfont", sans-serif;
+					font-size: 200%;
+					color: #00AEEF;
+				}
+
+				ul{
+					display: flex;
+					justify-content: center;
+					font-family:  "Benfont", sans-serif;
+				}
+
+					li{
+						margin: 0% 3%;
+						padding: 1.5%;
+						border-radius: 15px;
+						color: white;
+						font-size: 110%;
+						width: 60%;
+					}
+
+						.completed{
+							background-image: url("../Afbeeldingen/check.png");
+							background-color: #00AEEF;
+							background-position: right;
+							background-size: contain;
+							background-repeat: no-repeat;
+						}
+
+						.active{
+							background-color: #00AEEF;
+						}
+
+						.inactive{
+							background-color: rgba(0,0,0,0.1);
+						}
+
+				.persoonlijk{
+					display: grid;
+					background-color: #00AEEF;
+					height: 50%;
+				}
+
+					h1{
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 220%;
+					}
+
+						span{
+							color: white;
+							margin:0% 1%;
+						}
+
+					h3{
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						text-align: bottom;
+						margin-top: 110%;
+						font-size: 140%;
+
+					}
+
+					.sim-only,.toestel{
+						box-shadow: 3px 3px 20px rgba(0,0,0,0.1);
+					}
+
+					.sim-only:hover,.toestel:hover{
+						cursor: pointer;
+					}
+
+					.sim-only{
+						grid-column: 2/3;
+						height: 350px;
+						background-image: url("../Afbeeldingen/simcard.svg");
+						background-repeat: no-repeat;
+						background-position: top;
+						background-color: white;
+						background-size: contain;
+						grid-row:2/3;
+						/*background-color: white;*/
+					}
+
+					.toestel{
+						grid-column: 4/5;
+						grid-row:2/3;
+						height: 350px;
+						background-image: url("../Afbeeldingen/smartphone-call.svg");
+						fill:currentColor;
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-color: white;
+					}
