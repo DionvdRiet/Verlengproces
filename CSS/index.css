@@ -18,6 +18,10 @@ body{
 		margin-top: 6px;
 	}
 
+    img:hover {
+        cursor: pointer;
+    }
+
 	.content{
 		display: grid;
 		grid-template-rows: 0.5fr 0.5fr 10fr;
@@ -84,21 +88,47 @@ body{
 						.inactive{
 							background-color: rgba(0,0,0,0.1);
 						}
+                            .completed {
+                                background-image: url("../Afbeeldingen/check.png");
+                                background-color: #00AEEF;
+                                background-position: right;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
 
-				.opties{
+				.opties
+                {
 					display: grid;
 					grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
 					grid-template-rows: 0.3fr 3fr 1fr;
 				}
 
-					h3{
+                .persoonlijk 
+                {
+                    display: grid;
+                    background-color: #00AEEF;
+                    height: 50%;
+                }
+                    h1 
+                    {
+                        display: flex;
+                        justify-content: center;
+                        font-family: "Benfont", sans-serif;
+                        font-size: 220%;
+                    }
+                        span {
+                            color: white;
+                            margin: 0% 1%;
+                        }
+
+					h3
+                    {
 						display: flex;
 						justify-content: center;
 						font-family: "Benfont", sans-serif;
 						text-align: bottom;
 						margin-top: 110%;
 						font-size: 140%;
-
 					}
 
 					.sim-only,.toestel{
@@ -112,7 +142,7 @@ body{
 					.sim-only{
 						grid-column: 2/3;
 						height: 350px;
-						background-image: url("../Afbeeldingen/simcard.svg");
+						background-image: url("../Afbeeldingen/simcard-blue.svg");
 						background-repeat: no-repeat;
 						background-position: top;
 						background-color: white;
