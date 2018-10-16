@@ -99,11 +99,13 @@ body{
 
 				.persoonlijk{
 					display: grid;
+					grid-template-rows: 1fr 0.3fr 3fr 1fr;
 					background-color: #00AEEF;
-					height: 50%;
+					height: 60%;
 				}
 
 					h1{
+						grid-row:1/2;
 						display: flex;
 						justify-content: center;
 						font-family: "Benfont", sans-serif;
@@ -115,6 +117,14 @@ body{
 							margin:0% 1%;
 						}
 
+					h2{
+						grid-row:2/3;
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 120%;
+					}
+
 					h3{
 						display: flex;
 						justify-content: center;
@@ -125,33 +135,26 @@ body{
 
 					}
 
-					.sim-only,.toestel{
-						box-shadow: 3px 3px 20px rgba(0,0,0,0.1);
+					.sim-opties{
+						display: grid;
+						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+						grid-row:3/4;
 					}
 
-					.sim-only:hover,.toestel:hover{
-						cursor: pointer;
-					}
+						.sim-opties > div{
+							display: flex;
+							background-color: white;
+							border: 1px solid rgba(0,0,0,0.1);
+						}
 
-					.sim-only{
-						grid-column: 2/3;
-						height: 350px;
-						background-image: url("../Afbeeldingen/simcard.svg");
-						background-repeat: no-repeat;
-						background-position: top;
-						background-color: white;
-						background-size: contain;
-						grid-row:2/3;
-						/*background-color: white;*/
-					}
+						.belminuten{
+							grid-column: 2/3;
+						}
 
-					.toestel{
-						grid-column: 4/5;
-						grid-row:2/3;
-						height: 350px;
-						background-image: url("../Afbeeldingen/smartphone-call.svg");
-						fill:currentColor;
-						background-repeat: no-repeat;
-						background-size: contain;
-						background-color: white;
-					}
+						.internet{
+							grid-column: 3/4;
+						}
+
+						.prijs{
+							grid-column: 4/5;
+						}

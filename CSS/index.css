@@ -102,7 +102,8 @@ body{
 					}
 
 					.sim-only,.toestel{
-						box-shadow: 3px 3px 20px rgba(0,0,0,0.1);
+						background-color: #00AEEF;
+						color: white;
 					}
 
 					.sim-only:hover,.toestel:hover{
@@ -112,11 +113,10 @@ body{
 					.sim-only{
 						grid-column: 2/3;
 						height: 350px;
-						background-image: url("../Afbeeldingen/simcard.svg");
+						background-image: url("../Afbeeldingen/sim.svg");
 						background-repeat: no-repeat;
-						background-position: top;
-						background-color: white;
-						background-size: contain;
+						background-position: 50% 30%;
+						background-size: 80%;;
 						grid-row:2/3;
 						/*background-color: white;*/
 					}
@@ -125,9 +125,8 @@ body{
 						grid-column: 4/5;
 						grid-row:2/3;
 						height: 350px;
-						background-image: url("../Afbeeldingen/smartphone-call.svg");
-						fill:currentColor;
+						background-image: url("../Afbeeldingen/phone.svg");
 						background-repeat: no-repeat;
-						background-size: contain;
-						background-color: white;
+						background-position: 50% 30%;
+						background-size: 80%;;
 					}
