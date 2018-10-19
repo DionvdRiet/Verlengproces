@@ -32,7 +32,7 @@ body{
     grid-template-rows: 1% 0.3fr 10fr;
     grid-column: 1/4;
     grid-template-columns: 20% 60% 20%;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 		.ben-nav, .persoonlijk-nav{
 			display: flex;
@@ -68,13 +68,14 @@ body{
 			grid-row:3/4;
 		}
 
-				title{
-					display: flex;
-					justify-content: center;
-					font-family:  "Benfont", sans-serif;
-					font-size: 200%;
-					color: #00AEEF;
-				}
+            title {
+                display: flex;
+                justify-content: center;
+                font-family: "Benfont", sans-serif;
+                font-size: 200%;
+                color: #00AEEF;
+                margin-bottom: 25px;
+            }
 
 				ul{
 					display: flex;
@@ -98,6 +99,7 @@ body{
 						.inactive{
 							background-color: rgba(0,0,0,0.1);
 						}
+
                             .completed {
                                 background-image: url("../Afbeeldingen/check.png");
                                 background-color: #00AEEF;
@@ -106,19 +108,23 @@ body{
                                 background-repeat: no-repeat;
                             }
 
-				#Opties
-                {
-					display: grid;
-					grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
-					grid-template-rows: 0.3fr 3fr 1fr;
-				}
+#Opties
+{
+    margin-top:50px;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
+	grid-template-rows: 0.3fr 3fr 1fr;
+}
 
-                #Opties > div {
-                    height: 350px;
-                    background-size: 80%;
-                }
-
-                
+#Opties > div {
+    height: 340px;
+    width: 280px;
+    background-size: 60%;
+    font-family: BenFont;
+    font-size: 23px;
+    border-radius: 10px;
+    position: relative;
+}
 
 .sim-only {
     grid-column: 2/3;
@@ -128,17 +134,10 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 30%;
 }
-.sim-only span 
-{
-    margin-left:120px;
-    position:absolute;
-    bottom:60px;
-}
-
-.toestel span {
-    margin-left: 135px;
+.sim-only span {
     position: absolute;
-    bottom: 60px;
+    margin-left: 95px;
+    bottom: 25px;
 }
 
 .toestel {
@@ -149,6 +148,13 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 30%;
 }
+
+.toestel span {
+    position: absolute;
+    margin-left: 88px;
+    bottom: 25px;
+}
+
                     h1 
                     {
                         display: flex;
@@ -227,7 +233,8 @@ body{
     font-size: 30px;
     grid-template-rows:1fr 1fr 1fr;
 }
-    #persoonlijk {
+
+#persoonlijk {
     display: grid;
     background-color: #00AEEF;
     height: 60%;
