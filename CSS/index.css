@@ -162,10 +162,6 @@ body{
                         font-family: "Benfont", sans-serif;
                         font-size: 220%;
                     }
-                        span {
-                            color: white;
-                            margin: 0% 1%;
-                        }
 
 					h3
                     {
@@ -203,11 +199,14 @@ body{
 						}
 
 /* Toestel filter pagina Begin Autheur: Necati Unal*/
-#HuidigeAbonnement 
-{
+#HuidigeAbonnement {
+    margin-top:20px;
+    height: auto;
     display: grid;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 15px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 150px 50px 50px;
 }
 
 #HuidigeAbonnement > .benBlue {
@@ -217,22 +216,34 @@ body{
 #HuidigeAbonnement > img{
     width:75px;
     height:150px;
-    padding:10px 30px;
-    margin-left:50px;
-}
-
-.HuidigeAbonnementGrid
-{
-    grid-column:2/7;
+    margin-top:40px;
+    margin-left:80px;
 }
 
 #HuidigeAbonnement > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
     font-size: 30px;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-column: 2 / all;
 }
+
+#HuidigeAbonnement span {
+    color: #00AEEF;
+    font-weight:bold;
+}
+
+#HuidigeAbonnement h5
+{
+    display:inline-block;
+}
+
+#HuidigeAbonnement > .headers {
+    display: flex;
+    grid-row: 1/2;
+    justify-content: center;
+    font-family: "Benfont", sans-serif;
+    font-size: 220%;
+    font-weight:bolder;
+}
+
 
 #persoonlijk {
     display: grid;
