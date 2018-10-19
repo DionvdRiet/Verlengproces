@@ -11,7 +11,7 @@ body{
 	width: 100%;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr 3.5fr 1fr;
+	grid-template-columns: repeat(12,1fr);
 }
 
 	img{
@@ -25,8 +25,8 @@ body{
 	.content{
 		display: grid;
 		grid-template-rows: 1% 0.3fr 10fr;
-		grid-column: 1/4;
-		grid-template-columns: 20% 60% 20%;
+		grid-column: 1/13;
+		/*grid-template-columns: 20% 60% 20%;*/
 
 	}
 		.ben-nav, .persoonlijk-nav{
@@ -191,7 +191,8 @@ body{
 					display: grid;
 					/*grid-template-rows: 0.3fr 1% 0% 0.3fr;*/
 					background-color: #00AEEF;
-					height: 70%;
+					grid-column: 2/5;
+					height: 60%;
 				}
 
 					h1{
@@ -207,7 +208,7 @@ body{
 							margin:0% 1%;
 						}
 
-					.persoonlijk h2{
+					h2{
 						grid-row:2/3;
 						display: flex;
 						justify-content: center;
@@ -219,7 +220,7 @@ body{
 						color: white;
 					}
 
-					.persoonlijk h3{
+					h3{
 						display: flex;
 						justify-content: center;
 						font-family: "Benfont", sans-serif;
@@ -234,7 +235,6 @@ body{
 						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 						grid-template-rows: 3fr 1.7fr;
 						grid-row:3/4;
-						height: 100%;
 					}
 
 						.sim-opties > div{
@@ -329,7 +329,7 @@ body{
 						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 						grid-template-rows: 3fr 0.8fr;
 						grid-row:3/4;
-						height: 120%; /*Als je dit weghaalt, dan komen de knoppen gewoon er binnen*/
+						height: 120%;
 					}
 
 						.toestel-opties > div{
@@ -342,14 +342,14 @@ body{
 
 							.top{
 								display: flex;
-								font-size: 150%;
+								font-size: 120%;
 							}
 
-						/*.telefoon-1,.telefoon-2,.telefoon-3{
+						.telefoon-1,.telefoon-2,.telefoon-3{
 							display: flex;
 							justify-content: center;
 							background-color: white;
-						}*/
+						}
 
 							.telefoon1-img,.telefoon2-img,.telefoon3-img{
 								background-repeat: no-repeat;
@@ -369,7 +369,7 @@ body{
 								background-image: url("../Afbeeldingen/Toestellen/p20.png");
 							}
 
-							.persoonlijk h4{
+							h4{
 								display: flex;
 								font-size: 130%;
 								line-height: 1px;
@@ -408,12 +408,12 @@ body{
 							grid-column: 1/2;
 							box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
 							border-radius: 15px;
-							/*grid-row:1/4;*/
+							grid-row:1/4;
 						}
 
 							#zoek-toestel{
 								width: 100%;
-								height: 40px;
+								height: 5%;
 								background-image: url("../Afbeeldingen/search.svg"); 
 								background-repeat: no-repeat;
 								background-size: 10%;
@@ -430,7 +430,7 @@ body{
 									font-size: 150%;
 									border:none;
 									margin-top: 1%;
-									border-bottom: 1px solid rgba(0,0,0,0.1);
+									border-bottom: 1px solid black;
 									grid-row:1/2;
 								}
 
@@ -443,7 +443,6 @@ body{
 
 								#een{
 									grid-row:2/3;
-									background-color: green;
 									
 								}
 
@@ -470,24 +469,24 @@ body{
 								}
 
 									input[type=checkbox]{
-									  -webkit-transform: scale(2);
+									  /* Double-sized Checkboxes */
+									  -ms-transform: scale(2); /* IE */
+									  -moz-transform: scale(2); /* FF */
+									  -webkit-transform: scale(2); /* Safari and Chrome */
+									  -o-transform: scale(2); /* Opera */
 									  padding: 10px;
 									  margin-left: 10px;
 									  margin-top: 40px;
 									}
 
-									input[type=button]{
-										display: inline-block;
-									}
-
-								.merk h5{
+								h5{
 									font-family: "Benfont", sans-serif;
 									grid-column: 2/3;
 									font-size: 120%;
 									grid-row:1/2;
 								}
 
-								.merk h6{
+								h6{
 									grid-column: 3/4;
 									color: #00AEEF;
 									grid-row:1/2;
@@ -497,10 +496,10 @@ body{
 
 						.keuzemenu{
 							display: grid;
-							/*grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;*/
+							grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 							grid-template-rows: 3fr 0.8fr;
-							/*grid-row:1/4;*/
-							/*height: 120%;*/
+							grid-row:1/4;
+							height: 120%;
 							grid-column: 2/3;
 						}
 
@@ -510,78 +509,5 @@ body{
 								justify-content: center;
 								background-color: white;
 								border: 1px solid rgba(0,0,0,0.1);
-							}
-
-				.vergelijk-lijst{
-					display:grid;
-					height: 120vh;
-					grid-template-columns: 1fr 1fr 1fr;
-					grid-template-rows: 30% 25% 25% 25% 25%;
-				}
-
-					#abonnement{
-						grid-row:2/3;
-					}
-
-					#algemeen{
-						grid-row:3/4;
-					}
-
-					#display{
-						grid-row:4/5;
-					}
-
-					#prestaties{
-						grid-row:5/6;
-					}
-
-					table {
-						grid-column: 1/4;
-					    font-family: arial, sans-serif;
-					    border-collapse: collapse;
-					}
-
-					#wat{
-						color: #00AEEF;
-						/*font-family: "Benfont", sans-serif;*/
-					}
-
-					#onderwerp{
-						background-color: #00AEEF;
-						border-radius: 10px;
-						width: 5%;
-						font-family: "Benfont", sans-serif;
-						color: white
-					}
-
-					th{
-						background-color: white;
-					}
-
-					td, th {
-					    text-align: left;
-					    padding: 8px;
-					}
-
-					tr:nth-child(odd) {
-					    background-color: #F7F7F7;
-					}
-
-						.vergelijk-lijst h5{
-							grid-column: 1/5;
-						}
-
-							.vergelijk-telefoon-1{
-								background-image: url("../Afbeeldingen/Toestellen/p20.png");
-								grid-column: 2/3;
-								background-repeat: no-repeat;
-								background-position: center;
-							}
-
-							.vergelijk-telefoon-2{
-								background-image: url("../Afbeeldingen/Toestellen/mate20.png");
-								grid-column: 3/4;
-								background-repeat: no-repeat;
-								background-position: center;
 							}
 
