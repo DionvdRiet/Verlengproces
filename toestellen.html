@@ -5,35 +5,43 @@
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
-<nav class="ben-nav">
-				<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
-				<a href="">Sim Only</a>
-				<a href="">Telefoons</a>
-				<a href="">Studentenkorting</a>
-				<a href="">Klantenservice</a>
-				<input type="text" name="zoeken" id="nav-zoekbalk" placeholder="Waar ben je naar op zoek?">
-				<a href="">Log in</a>
-			</nav>
-			<nav class="persoonlijk-nav">
-				<a href="">Belstatus</a>
-				<a href="">Facturen</a>
-				<a href="">Abonnement</a>
-				<a href="">Toestel en sim</a>
-				<a href="">Gegevens</a>
-				<a href="">Vriendenvoordeel</a>
-				<a href="">Contact</a>
-			</nav>
+    <nav class="ben-nav">
+		<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
+		<a href="">Sim Only</a>
+		<a href="">Telefoons</a>
+		<a href="">Studentenkorting</a>
+		<a href="">Klantenservice</a>
+		<input type="text" name="zoeken" id="nav-zoekbalk" placeholder="Waar ben je naar op zoek?">
+		<a href="">Log in</a>
+    </nav>
+	<nav class="persoonlijk-nav">
+		<a href="">Belstatus</a>
+		<a href="">Facturen</a>
+		<a href="">Abonnement</a>
+		<a href="">Toestel en sim</a>
+		<a href="">Gegevens</a>
+		<a href="">Vriendenvoordeel</a>
+		<a href="">Contact</a>
+	</nav>
 	<div class="grid">
 		<div class="content">
 			<div class="informatie">
-				<div class="progress">
-					<title>Abonnement verlengen</title>
+				<div id="progressbar">
 					<ul>
 						<li class="completed">1. Type abonnement</li>
 						<li class="active">2. Toestel Kiezen</li>
 						<li class="inactive">3. Controle</li>
 					</ul>
 				</div>
+
+                <div id="HuidigeAbonnement">
+                    <img src="../Afbeeldingen/toestellen/Apple-iPhone-6s-Spacegrey-front_0.png" alt="Huidige toestel" />
+                    <div class="HuidigeAbonnementGrid">
+                        <h4>Huidige abonnement: <span class="benBlue">Apple Iphone 6s Spacegrey</span></h4>
+                    </div>
+                    <div class="HuidigeAbonnementGrid">2000MB</div>
+                    <div class="HuidigeAbonnementGrid">€23,00</div>
+                </div>
 
 				<div id="persoonlijk">
 					<h1>Ik <span id="bentitel">Ben</span> Persoonlijk</h1>

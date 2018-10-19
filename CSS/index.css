@@ -9,6 +9,7 @@
 
 body{
 	margin:0;
+    font-family:BenFontNormal;
 }
 
 .grid{
@@ -26,13 +27,13 @@ body{
         cursor: pointer;
     }
 
-	.content{
-		display: grid;
-		grid-template-rows: 1% 0.3fr 10fr;
-		grid-column: 1/4;
-		grid-template-columns: 20% 60% 20%;
-
-	}
+.content {
+    display: grid;
+    grid-template-rows: 1% 0.3fr 10fr;
+    grid-column: 1/4;
+    grid-template-columns: 20% 60% 20%;
+    margin-top: 80px;
+}
 		.ben-nav, .persoonlijk-nav{
 			display: flex;
 			justify-content: center;
@@ -65,7 +66,6 @@ body{
 		.informatie{
 			grid-column: 2/3;
 			grid-row:3/4;
-			/*background-color: rgba(240,240,240.1);*/
 		}
 
 				title{
@@ -106,12 +106,49 @@ body{
                                 background-repeat: no-repeat;
                             }
 
-				.opties
+				#Opties
                 {
 					display: grid;
 					grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
 					grid-template-rows: 0.3fr 3fr 1fr;
 				}
+
+                #Opties > div {
+                    height: 350px;
+                    background-size: 80%;
+                }
+
+                
+
+.sim-only {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    background-image: url("../Afbeeldingen/sim.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+.sim-only span 
+{
+    margin-left:120px;
+    position:absolute;
+    bottom:60px;
+}
+
+.toestel span {
+    margin-left: 135px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.toestel {
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+    background-image: url("../Afbeeldingen/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
                     h1 
                     {
                         display: flex;
@@ -128,13 +165,13 @@ body{
                     {
 						display: flex;
 						justify-content: center;
-						font-family: "Benfont", sans-serif;
+						font-family: BenFontNormal;
 						text-align: bottom;
 						margin-top: 110%;
 						font-size: 140%;
 					}
 
-					.sim-only,.toestel{
+					.sim-only, .toestel{
 						background-color: #00AEEF;
 						color: white;
 					}
@@ -143,29 +180,6 @@ body{
 						cursor: pointer;
 					}
 
-					.sim-only{
-						grid-column: 2/3;
-						height: 350px;
-						background-image: url("../Afbeeldingen/sim.svg");
-
-						/*background-image: url("../Afbeeldingen/simcard-blue.svg");*/
-
-						background-repeat: no-repeat;
-						background-position: 50% 30%;
-						background-size: 80%;;
-						grid-row:2/3;
-						/*background-color: white;*/
-					}
-
-                    .toestel {
-                        grid-column: 4/5;
-                        grid-row: 2/3;
-                        height: 350px;
-                        background-image: url("../Afbeeldingen/phone.svg");
-                        background-repeat: no-repeat;
-                        background-position: 50% 30%;
-                        background-size: 80%;
-                    }
 						.completed{
 							background-image: url("../Afbeeldingen/check.png");
 							background-color: #00AEEF;
@@ -183,13 +197,43 @@ body{
 						}
 
 /* Toestel filter pagina Begin Autheur: Necati Unal*/
-#persoonlijk {
+#HuidigeAbonnement 
+{
+    display: grid;
+    border:1px solid black;
+    border-radius: 15px;
+}
+
+#HuidigeAbonnement > .benBlue {
+    color: #00AEEF;
+}
+
+#HuidigeAbonnement > img{
+    width:75px;
+    height:150px;
+    padding:10px 30px;
+    margin-left:50px;
+}
+
+.HuidigeAbonnementGrid
+{
+    grid-column:2/7;
+}
+
+#HuidigeAbonnement > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    grid-template-rows:1fr 1fr 1fr;
+}
+    #persoonlijk {
     display: grid;
     background-color: #00AEEF;
     height: 60%;
     border-radius: 20px;
     padding: 0px 20px 0px 20px;
-    font-family:BenFontNormal;
+    font-family: BenFontNormal;
 }
 
 #persoonlijk h1 {
@@ -241,6 +285,10 @@ body{
 .top {
     display: flex;
     font-size: 150%;
+}
+
+#progressbar
+{
 }
 
 /* Toestel filter pagina Eind*/
