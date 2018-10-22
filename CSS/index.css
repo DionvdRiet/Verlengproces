@@ -567,9 +567,9 @@ body{
 
 				.vergelijk-lijst{
 					display:grid;
-					height: 120vh;
-					grid-template-columns: 1fr 1fr 1fr;
-					grid-template-rows: 30% 25% 25% 25% 25%;
+					height: 160vh;
+					grid-template-columns: 1fr 1fr 1fr 8%;
+					grid-template-rows: 30% 25% 25% 25% 25% 25%;
 				}
 
 					#abonnement{
@@ -586,6 +586,24 @@ body{
 
 					#prestaties{
 						grid-row:5/6;
+					}
+
+					#klik1,#klik2{
+							color: white;
+							background-color: black;
+							border:none;
+							height: 20%;
+							border-radius: 15px;
+					}
+
+					#klik1{
+						grid-row:6/7;
+						grid-column: 2/3;
+					}
+
+					#klik2{
+						grid-row:6/7;
+						grid-column: 3/4;
 					}
 
 					table {
@@ -637,4 +655,151 @@ body{
 								background-repeat: no-repeat;
 								background-position: center;
 							}
+
+							.plus{
+								background-image: url("../Afbeeldingen/add.svg");
+								background-position: center;
+								background-repeat: no-repeat;
+								background-size: 50%;
+								grid-column: 4/5;
+								background-color: #00AEEF;
+								height: 20%;
+								align-self: center;
+								border-radius: 15px;
+							}
+
+							#popup{
+								opacity: 0;
+								position: absolute;
+								display: none;
+								bottom:-1000px;
+								z-index: 2;
+								width: 800px;
+								height: 0px;
+								background-color: black;
+
+							}
+
+							#blur{
+								filter: none;
+							}
+
+							#weg-popup{
+								width: 50px;
+								height: 50px;
+								background-color: #00AEEF;
+							}
+
+							.gekozen-abonnement{
+			                    display: grid;
+			                    grid-template-columns: 30% 40% 30%;
+			                    grid-template-rows: 80% 20%;
+			                    background-color: #00AEEF;
+			                    height: 50%;
+			                    border-radius: 20px; 
+			                }
+
+			                	.gekozen-wijzig,.gekozen-kiezen{
+			                		font-family: "Benfont", sans-serif;
+			                		font-size: 110%;
+			                		height: 80%;
+									margin:0% 10%;
+									border-radius: 15px;
+									grid-row:2/3;
+			                	}
+
+			                	.gekozen-wijzig{
+									color: white;
+									background-color: transparent;
+									border: 2px solid white;
+									grid-column: 1/2;
+								}
+
+									.gekozen-wijzig:hover{
+										transition:background-color .2s;
+										transition:color .2s;
+										background-color: white;
+										color:black;
+									}
+
+								.gekozen-kiezen{
+									color: white;
+									background-color: black;
+									border:none;
+									grid-column: 3/4;
+								}
+
+									.gekozen-kiezen:hover{
+										transition:background-color .2s;
+										transition:color .2s;
+										background-color: rgba(0.0.0.0.6);
+										color: rgba(255,255,255,0.9);
+									}
+
+
+			                	.gekozen-abonnement h1{
+			                		grid-column: 2/3;
+			                		grid-row:1/2;
+			                		justify-content: left;
+			                	}
+
+			                	.gekozen-abonnement h2{
+			                		grid-column: 3/3;
+			                		grid-row:2/2;
+			     					font-family: "Benfont", sans-serif;
+			                		color: white;
+			                	}
+
+			                	.gekozen-telefoon{
+			                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
+			                		grid-column: 1/2;
+			                		grid-row:1/2;
+			                		background-position: center;
+			                		background-repeat: no-repeat;
+			                		background-size: contain;
+			                		height: 250px;
+			                		margin-top: 10%;
+			                	}
+
+			                	.controle-secties{
+			                		display: grid;
+			                		grid-template-columns: 48% 2% 48%;
+			                	}
+
+				                	.jouw-gegevens,.bestelling{
+				                		display: grid;
+				                		grid-template-columns: 10% 45% 35% 10% ;
+				                		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+				                		padding: 3%;
+				                	}
+
+				                	.jouw-gegevens h1,.bestelling h1{
+				                		grid-column:2/3;
+				                		color: #00AEEF;
+				                		font-size: 140%;
+				                		justify-content: left;
+				                	}
+
+				                	#controle-links{
+				                		font-family: "Benfont", sans-serif;
+				                		font-size: 100%;
+				                		grid-column:2/3;
+				                		justify-content: left;
+				                	}
+
+				                	#controle-rechts{
+				                		grid-column: 3/4;
+				                		font-family: "Benfont", sans-serif;
+				                		font-size: 100%;
+				                		justify-content: left;
+				                	}
+
+				                	.jouw-gegevens{
+				                		grid-column: 1/2;
+				                	}
+
+				                	.bestelling{
+				                		grid-column: 3/4;
+				                	}
+
 

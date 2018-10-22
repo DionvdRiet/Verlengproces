@@ -36,8 +36,12 @@
 					</ul>
 				</div>
 
-				<div class="vergelijk-lijst">
-						<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div>
+				<div id="popup">
+					<div id="weg-popup" onclick="popdown()"></div>
+				</div>
+				<div  id="blur" class="vergelijk-lijst">
+					
+						<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div><div class="plus" onclick="popup()"></div>
 						<!-- <div><h4>Belminuten/SMS</h4><h4>100</h4><h4>300</h4></div> -->
 						<table id="abonnement">
 							<tr>
@@ -113,7 +117,7 @@
 							</tr>
 							<tr>
 								<td id="wat">Pixeldichtheid</td>
-								<td>577 ppi</td>
+								<td>520 ppi</td>
 								<td>570 ppi</td>
 							</tr>
 							<tr>
@@ -150,8 +154,10 @@
 								<td>€0,00 per maand</td>
 							</tr>
 						</table>
-				</div>
-						<div class="leegte"></div>
+						<input type="button" name="wijzig" id="klik1" value="KIES TELEFOON 1" onclick="location.href='gekozen.html'">
+						<input type="button" name="kiezen" id="klik2" value="KIES TELEFOON 2">
+					</div>
+					
 					</div>
 				</div>
 
@@ -159,5 +165,7 @@
 		</div>
 	</div>
 
+
+<script src="js/popup.js"></script>
 </body>
 </html>
