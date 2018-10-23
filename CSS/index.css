@@ -767,6 +767,7 @@ body{
 			                	}
 
 				                	.jouw-gegevens,.bestelling{
+				                		margin-top: 10%;
 				                		display: grid;
 				                		grid-template-columns: 10% 45% 35% 10% ;
 				                		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
@@ -802,4 +803,59 @@ body{
 				                		grid-column: 3/4;
 				                	}
 
+				                	.buttons{
+				                		display: grid;
+				                		grid-template-columns:30% 5% 30% 5% 30%;
+				                		height: 30%;
+				                		grid-template-rows: 30% 25% 30%;
+				                	}
 
+				                		.terug-button,.wijzig-button,.bevestig-button{
+				                			border-radius: 15px;
+				                		}
+
+				                		.terug-button{
+				                			font-family: "Benfont", sans-serif;
+				                			font-size: 110%;
+				                			grid-column: 1/2;
+				                			grid-row: 2/3;
+				                			color: black;
+				                			width: 60%;
+				                			background-color: transparent;
+				                			border: 2px solid black;
+				                		}
+
+				                		.wijzig-button{
+				                			font-family: "Benfont", sans-serif;
+				                			font-size: 110%;
+				                			grid-column: 3/4;
+				                			grid-row: 2/3;
+				                			color: black;
+				                			background-color: transparent;
+				                			border: 2px solid black;
+				                		}
+
+				                		.bevestig-button{
+				                			font-family: "Benfont", sans-serif;
+				                			font-size: 110%;
+				                			grid-column: 3/4;
+				                			grid-row: 2/3;
+				                			color: white;
+				                			background-color: black;
+				                			border:none;
+				                			grid-column: 5/6;
+				                		}
+
+				                		.terug-button:hover,.wijzig-button:hover{
+											transition:background-color .2s;
+											transition:color .2s;
+											background-color: black;
+											color: white;
+										}
+
+					                	.bevestig-button:hover{
+											transition:background-color .2s;
+											transition:color .2s;
+											background-color: rgba(0.0.0.0.6);
+											color: rgba(255,255,255,0.9);
+										}
