@@ -774,11 +774,26 @@ body{
 				                		padding: 3%;
 				                	}
 
+				                	.bestelling{
+				                		grid-template-rows: 20% 60% 20%;
+				                	}
+
+				                	.bestelling-toestel{
+				                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
+				                		background-position: center;
+										background-repeat: no-repeat;
+				                		background-size: 80%;				                		
+				                		grid-column: 2/3;
+				                		grid-row:2/3;
+				                		width: 60%;
+				                	}
+
 				                	.jouw-gegevens h1,.bestelling h1{
 				                		grid-column:2/3;
 				                		color: #00AEEF;
 				                		font-size: 140%;
 				                		justify-content: left;
+				                		grid-row:1/2;
 				                	}
 
 				                	#controle-links{
@@ -786,6 +801,7 @@ body{
 				                		font-size: 100%;
 				                		grid-column:2/3;
 				                		justify-content: left;
+				                		/*grid-row:1/2;*/
 				                	}
 
 				                	#controle-rechts{
@@ -859,3 +875,16 @@ body{
 											background-color: rgba(0.0.0.0.6);
 											color: rgba(255,255,255,0.9);
 										}
+
+									.blue{
+										color: #00AEEF;
+									}
+
+									.confetti{
+										background-image: url("../Afbeeldingen/confetti.png");
+										position: absolute;
+										width: 100%;
+										height: 100%;
+										background-position: center;
+										background-repeat: repeat-x;
+									}
