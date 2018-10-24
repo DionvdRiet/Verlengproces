@@ -235,24 +235,24 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-    #Abonnement div {
-        background-color: chartreuse;
-        border: 1px solid red;
-    }
+#Abonnement div {
+    justify-content:center;
+}
+#abonnement > span
+{
+    border:1px solid red;
+}
 
 #HuidigeAbonnement span {
     color: #00AEEF;
-    font-weight: bold;
-    display:inline-block;
-    margin-right:50px;
+    margin-right: 50px;
+    font-weight:bolder;
 }
 
 #HuidigeAbonnement h5
 {
     display:inline-block;
 }
-
-
 
 #persoonlijk {
     display: grid;
