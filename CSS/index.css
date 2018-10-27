@@ -65,6 +65,25 @@ body{
 			background-color: black;
 		}
 
+		/*Progress bar*/
+
+		.completed{
+			background-image: url("../Afbeeldingen/check.png");
+			background-color: #00AEEF;
+			background-position: right;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.active{
+			background-color: #00AEEF;
+		}
+
+		.inactive{
+			background-color: rgba(0,0,0,0.1);
+		}
+
+
 		.informatie{
 			grid-column: 2/3;
 			grid-row:3/4;
@@ -110,433 +129,272 @@ body{
                                 background-repeat: no-repeat;
                             }
 
-#Opties
-{
+.opties{
     margin-top:50px;
 	display: grid;
 	grid-template-columns: 1fr 1.5fr 0.5fr 1.5fr 1fr;
 	grid-template-rows: 0.3fr 3fr 1fr;
 }
 
-#Opties > div {
-    height: 340px;
-    width: 280px;
-    background-size: 60%;
-    font-family: BenFont;
-    font-size: 23px;
-    border-radius: 10px;
-    position: relative;
+	.opties > div {
+	    height: 340px;
+	    width: 280px;
+	    background-size: 60%;
+	    font-family: BenFont;
+	    font-size: 23px;
+	    border-radius: 10px;
+	    position: relative;
+	}
+
+	.sim-only{
+		grid-column: 2/3;
+		height: 350px;
+		background-image: url("../Afbeeldingen/sim.svg");
+		/*background-image: url("../Afbeeldingen/simcard-blue.svg");*/
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+		background-size: 80%;;
+		grid-row:2/3;
+		/*background-color: white;*/
+	}
+
+	.sim-only span {
+	    position: absolute;
+	    margin-left: 95px;
+	    bottom: 25px;
+	}
+
+	.toestel{
+		grid-column: 4/5;
+		grid-row:2/3;
+		height: 350px;
+		background-image: url("../Afbeeldingen/phone.svg");
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+		background-size: 80%;;
+	}
+
+	.toestel span {
+	    position: absolute;
+	    margin-left: 88px;
+	    bottom: 25px;
+	}
+
+		.sim-only, .toestel{
+			background-color: #00AEEF;
+			color: white;
+		}
+
+		.sim-only:hover,.toestel:hover{
+			cursor: pointer;
+		}
+
+		/*SIM-ONLY*/
+
+.persoonlijk{
+	display: grid;
+	background-color: #00AEEF;
+	height: 60%;
+	border-radius: 20px; 
 }
-
-.sim-only {
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    background-image: url("../Afbeeldingen/sim.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-}
-.sim-only span {
-    position: absolute;
-    margin-left: 95px;
-    bottom: 25px;
-}
-
-.toestel {
-    grid-column: 4/5;
-    grid-row: 2/3;
-
-    background-image: url("../Afbeeldingen/phone.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-}
-
-.toestel span {
-    position: absolute;
-    margin-left: 88px;
-    bottom: 25px;
-}
-
-                    h1 
-                    {
-                        display: flex;
-                        justify-content: center;
-                        font-family: "Benfont", sans-serif;
-                        font-size: 220%;
-                    }
-
-					h3
-                    {
-						display: flex;
-						justify-content: center;
-						font-family: BenFontNormal;
-						text-align: bottom;
-						margin-top: 110%;
-						font-size: 140%;
-					}
-
-					.sim-only, .toestel{
-						background-color: #00AEEF;
-						color: white;
-					}
-
-					.sim-only:hover,.toestel:hover{
-						cursor: pointer;
-					}
-
-						.completed{
-							background-image: url("../Afbeeldingen/check.png");
-							background-color: #00AEEF;
-							background-position: right;
-							background-size: contain;
-							background-repeat: no-repeat;
-						}
-
-						.active{
-							background-color: #00AEEF;
-						}
-
-						.inactive{
-							background-color: rgba(0,0,0,0.1);
-						}
-
-/* Toestel filter pagina Begin Autheur: Necati Unal*/
-/*#HuidigeAbonnement {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    height: auto;
-    display: grid;
-    border: 1px solid black;
-    border-radius: 15px;
-    grid-template-columns: 21% 50% 29%;
-    grid-template-rows: 100px auto;
-}
-
-#HuidigeAbonnement > .benBlue {
-    color: #00AEEF;
-}
-
-#HuidigeAbonnement > img{
-    width:75px;
-    height:150px;
-    margin-top:40px;
-    margin-left:80px;
-}
-
-#HuidigeAbonnement > div:first-of-type {
-    font-size: 30px;
-    grid-column: 2 / all;
-}
-
-#Abonnement {
-    grid-column: 2 / all;
-    grid-row: 2/auto;
-    display: grid;
-    column-gap: 5px;
-    row-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-    #Abonnement div {
-        background-color: chartreuse;
-        border: 1px solid red;
+	.persoonlijk h1{
+		display: flex;
+		justify-content: center;
+		font-family: "Benfont", sans-serif;
+		font-size: 220%;
+	}
+	.persoonlijk span{
+	    color: white;
+	    margin: 0% 1%;
     }
 
-#HuidigeAbonnement span {
-    color: #00AEEF;
-    font-weight: bold;
-    display:inline-block;
-    margin-right:50px;
-}
+	h3{
+		display: flex;
+		justify-content: center;
+		font-family: "Benfont", sans-serif;
+		text-align: bottom;
+		margin-top: 110%;
+		font-size: 140%;
+	}
 
-#HuidigeAbonnement h5
-{
-    display:inline-block;
-}
-*/
+		#bentitel{
+			color: white;
+			margin:0% 1%;
+		}
 
-.persoonlijk 
-                {
-                    display: grid;
-                    background-color: #00AEEF;
-                    height: 60%;
-                    border-radius: 20px; 
-                }
-                    h1 
-                    {
-                        display: flex;
-                        justify-content: center;
-                        font-family: "Benfont", sans-serif;
-                        font-size: 220%;
-                    }
-                        span {
-                            color: white;
-                            margin: 0% 1%;
-                        }
+		.persoonlijk h2{
+			grid-row:2/3;
+			display: flex;
+			justify-content: center;
+			font-family: "Benfont", sans-serif;
+			font-size: 120%;
+			color: white;
+		}
 
-					h3
-                    {
-						display: flex;
-						justify-content: center;
-						font-family: "Benfont", sans-serif;
-						text-align: bottom;
-						margin-top: 110%;
-						font-size: 140%;
-					}
+		.sim-opties{
+			display: grid;
+			grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+			grid-template-rows: 3fr 1.7fr;
+			grid-row:3/4;
+		}
 
-					.sim-only,.toestel{
-						background-color: #00AEEF;
-						color: white;
-					}
+			.sim-opties > div{
+				display: grid;
+				grid-template-rows: 0.3fr 0.5fr 0.3fr;
+				justify-content: center;
+				background-color: white;
+				border: 1px solid rgba(0,0,0,0.1);
+			}
 
-					.sim-only:hover,.toestel:hover{
-						cursor: pointer;
-					}
-
-					.sim-only{
-						grid-column: 2/3;
-						height: 350px;
-						background-image: url("../Afbeeldingen/sim.svg");
-
-						/*background-image: url("../Afbeeldingen/simcard-blue.svg");*/
-
-						background-repeat: no-repeat;
-						background-position: 50% 30%;
-						background-size: 80%;;
-						grid-row:2/3;
-						/*background-color: white;*/
-					}
-
-					.toestel{
-						grid-column: 4/5;
-						grid-row:2/3;
-						height: 350px;
-						background-image: url("../Afbeeldingen/phone.svg");
-						background-repeat: no-repeat;
-						background-position: 50% 30%;
-						background-size: 80%;;
-					}
-
-						.completed{
-							background-image: url("../Afbeeldingen/check.png");
-							background-color: #00AEEF;
-							background-position: right;
-							background-size: contain;
-							background-repeat: no-repeat;
-						}
-
-						.active{
-							background-color: #00AEEF;
-						}
-
-						.inactive{
-							background-color: rgba(0,0,0,0.1);
-						}
-
-				.persoonlijk{
-					display: grid;
-					/*grid-template-rows: 0.3fr 1% 0% 0.3fr;*/
-					background-color: #00AEEF;
-					height: 60%;
+				.midden{
+					grid-row:2/3;
 				}
 
-					h1{
-						grid-row:1/2;
-						display: flex;
-						justify-content: center;
-						font-family: "Benfont", sans-serif;
-						font-size: 220%;
+				.type{
+					grid-row:3/4;
+				}
+
+			.belminuten{
+				grid-column: 2/3;
+			}
+
+				.belminuten h1, .prijs h1{
+					color: #00AEEF;
+				}
+
+			.internet{
+				grid-column: 3/4;
+			}
+
+			.prijs{
+				grid-column: 4/5;
+			}
+
+			.wijzig,.kiezen{
+				margin-top: 10%;
+				font-size: 120%;
+				font-family: "Benfont", sans-serif;
+			}
+
+			.wijzig{
+				color: white;
+				background-color: transparent;
+				border: 2px solid white;
+				border-radius: 15px;
+				grid-column: 2/3;
+				height: 60%;
+				grid-row:2/3;
+			}
+
+				.wijzig-bundel-button:hover{
+					transition:background-color .2s;
+					transition:color .2s;
+					background-color: white;
+					color:black;
+				}
+
+			.kiezen{
+				color: white;
+				background-color: black;
+				border:none;
+				height: 60%;
+				border-radius: 15px;
+				grid-column: 4/5;
+				grid-row:2/3;
+			}
+
+				.kiezen:hover{
+					transition:background-color .2s;
+					transition:color .2s;
+					background-color: rgba(0.0.0.0.6);
+					color: rgba(255,255,255,0.9);
+				}
+
+				/*Toestellen*/
+
+			.toestel-bekijken{
+				color: white;
+				background-color: black;
+				border:none;
+				height: 100%;
+				border-radius: 10px;
+			}
+
+				.toestel-bekijken:hover{
+					transition:background-color .2s;
+					transition:color .2s;
+					background-color: rgba(0.0.0.0.6);
+					color: rgba(255,255,255,0.9);
+				}
+
+		.toestel-opties{
+			display: grid;
+			grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+			grid-template-rows: 3fr 0.8fr;
+			grid-row:3/4;
+			height: 120%;
+		}
+
+			.toestel-opties > div{
+				display: grid;
+				grid-template-rows: 0.3fr 2fr 0.6fr;
+				justify-content: center;
+				background-color: white;
+				border: 1px solid rgba(0,0,0,0.1);
+			}
+
+				.top{
+					display: flex;
+					font-size: 120%;
+				}
+
+			.telefoon-1,.telefoon-2,.telefoon-3{
+				display: flex;
+				justify-content: center;
+				background-color: white;
+			}
+
+				.telefoon1-img,.telefoon2-img,.telefoon3-img{
+					background-repeat: no-repeat;
+					background-size:50%;
+					background-position: top;
+				}
+
+				.telefoon1-img{
+					background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
+				}
+
+				.telefoon2-img{
+					background-image: url("../Afbeeldingen/Toestellen/mate20.png");
+				}
+
+				.telefoon3-img{
+					background-image: url("../Afbeeldingen/Toestellen/p20.png");
+				}
+
+				h4{
+					display: flex;
+					font-size: 130%;
+					line-height: 1px;
+					justify-content: center;
+					font-family: "Benfont", sans-serif;
+				}
+
+				.telefoon-1{
+					grid-column: 2/3;
+				}
+
+				.telefoon-2{
+					grid-column: 3/4;
+				}
+
+				.telefoon-3{
+					grid-column: 4/5;
+				}
+
+					.toestel-bekijken{
+						height: 50px;
 					}
-
-						#bentitel{
-							color: white;
-							margin:0% 1%;
-						}
-
-					h2{
-						grid-row:2/3;
-						display: flex;
-						justify-content: center;
-						font-family: "Benfont", sans-serif;
-						font-size: 120%;
-					}
-
-					.persoonlijk h2{
-						color: white;
-					}
-
-					h3{
-						display: flex;
-						justify-content: center;
-						font-family: "Benfont", sans-serif;
-						text-align: bottom;
-						margin-top: 110%;
-						font-size: 140%;
-
-					}
-
-					.sim-opties{
-						display: grid;
-						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-						grid-template-rows: 3fr 1.7fr;
-						grid-row:3/4;
-					}
-
-						.sim-opties > div{
-							display: grid;
-							grid-template-rows: 0.3fr 0.5fr 0.3fr;
-							justify-content: center;
-							background-color: white;
-							border: 1px solid rgba(0,0,0,0.1);
-						}
-
-							.midden{
-								grid-row:2/3;
-							}
-
-							.type{
-								grid-row:3/4;
-							}
-
-						.belminuten{
-							grid-column: 2/3;
-						}
-
-							.belminuten h1, .prijs h1{
-								color: #00AEEF;
-							}
-
-						.internet{
-							grid-column: 3/4;
-						}
-
-						.prijs{
-							grid-column: 4/5;
-						}
-
-						.wijzig,.kiezen{
-							margin-top: 10%;
-							font-size: 120%;
-							font-family: "Benfont", sans-serif;
-						}
-
-						.wijzig{
-							color: white;
-							background-color: transparent;
-							border: 2px solid white;
-							border-radius: 15px;
-							grid-column: 2/3;
-							height: 60%;
-							grid-row:2/3;
-						}
-
-							.wijzig:hover{
-								transition:background-color .2s;
-								transition:color .2s;
-								background-color: white;
-								color:black;
-							}
-
-						.kiezen{
-							color: white;
-							background-color: black;
-							border:none;
-							height: 60%;
-							border-radius: 15px;
-							grid-column: 4/5;
-							grid-row:2/3;
-						}
-
-							.kiezen:hover{
-								transition:background-color .2s;
-								transition:color .2s;
-								background-color: rgba(0.0.0.0.6);
-								color: rgba(255,255,255,0.9);
-							}
-
-						.toestel-bekijken{
-							color: white;
-							background-color: black;
-							border:none;
-							height: 100%;
-							border-radius: 10px;
-						}
-
-							.toestel-bekijken:hover{
-								transition:background-color .2s;
-								transition:color .2s;
-								background-color: rgba(0.0.0.0.6);
-								color: rgba(255,255,255,0.9);
-							}
-
-					.toestel-opties{
-						display: grid;
-						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-						grid-template-rows: 3fr 0.8fr;
-						grid-row:3/4;
-						height: 120%;
-					}
-
-						.toestel-opties > div{
-							display: grid;
-							grid-template-rows: 0.3fr 2fr 0.6fr;
-							justify-content: center;
-							background-color: white;
-							border: 1px solid rgba(0,0,0,0.1);
-						}
-
-							.top{
-								display: flex;
-								font-size: 120%;
-							}
-
-						.telefoon-1,.telefoon-2,.telefoon-3{
-							display: flex;
-							justify-content: center;
-							background-color: white;
-						}
-
-							.telefoon1-img,.telefoon2-img,.telefoon3-img{
-								background-repeat: no-repeat;
-								background-size:50%;
-								background-position: top;
-							}
-
-							.telefoon1-img{
-								background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
-							}
-
-							.telefoon2-img{
-								background-image: url("../Afbeeldingen/Toestellen/mate20.png");
-							}
-
-							.telefoon3-img{
-								background-image: url("../Afbeeldingen/Toestellen/p20.png");
-							}
-
-							h4{
-								display: flex;
-								font-size: 130%;
-								line-height: 1px;
-								justify-content: center;
-								font-family: "Benfont", sans-serif;
-							}
-
-							.telefoon-1{
-								grid-column: 2/3;
-							}
-
-							.telefoon-2{
-								grid-column: 3/4;
-							}
-
-							.telefoon-3{
-								grid-column: 4/5;
-							}
-
-								.toestel-bekijken{
-									height: 50px;
-								}
 
 					.keuze{
 						display: grid;
@@ -555,6 +413,12 @@ body{
 							border-radius: 15px;
 							grid-row:1/4;
 						}
+
+							.filter h1{
+								display: flex;
+								justify-content: center;
+								font-family: "Benfont", sans-serif;
+							}
 
 							#zoek-toestel{
 								width: 100%;
@@ -586,6 +450,8 @@ body{
 									/*grid-template-rows: repeat(4,1%);*/
 								}
 
+								/*DIVS RONDOMFORM INPUT CHECKBOXJES*/
+
 								#een{
 									grid-row:2/3;
 									
@@ -606,23 +472,22 @@ body{
 									
 								}
 
-
 								form > input{
 									display: block;
 									grid-row:1/2;
 									grid-column: 1/2;
 								}
 
-									input[type=checkbox]{
-									  /* Double-sized Checkboxes */
-									  -ms-transform: scale(2); /* IE */
-									  -moz-transform: scale(2); /* FF */
-									  -webkit-transform: scale(2); /* Safari and Chrome */
-									  -o-transform: scale(2); /* Opera */
-									  padding: 10px;
-									  margin-left: 10px;
-									  margin-top: 40px;
-									}
+								input[type=checkbox]{
+								  /* Double-sized Checkboxes */
+								  -ms-transform: scale(2); /* IE */
+								  -moz-transform: scale(2); /* FF */
+								  -webkit-transform: scale(2); /* Safari and Chrome */
+								  -o-transform: scale(2); /* Opera */
+								  padding: 10px;
+								  margin-left: 10px;
+								  margin-top: 40px;
+								}
 
 								h5{
 									font-family: "Benfont", sans-serif;
@@ -656,12 +521,38 @@ body{
 								border: 1px solid rgba(0,0,0,0.1);
 							}
 
+					/*Vergelijk*/
+
 				.vergelijk-lijst{
 					display:grid;
 					height: 160vh;
 					grid-template-columns: 1fr 1fr 1fr 8%;
 					grid-template-rows: 30% 25% 25% 25% 25% 25%;
 				}
+
+				#blur{
+					filter: none;
+				}
+
+				table {
+					grid-column: 1/4;
+				    font-family: arial, sans-serif;
+				    border-collapse: collapse;
+				}
+
+				tr:nth-child(odd) {
+				    background-color: #F7F7F7;
+				}
+
+				th{
+					background-color: white;
+				}
+
+				td, th {
+				    text-align: left;
+				    padding: 8px;
+				}
+
 
 					#abonnement{
 						grid-row:2/3;
@@ -679,35 +570,6 @@ body{
 						grid-row:5/6;
 					}
 
-					#klik1,#klik2{
-							color: white;
-							background-color: black;
-							border:none;
-							height: 20%;
-							border-radius: 15px;
-					}
-
-					#klik1{
-						grid-row:6/7;
-						grid-column: 2/3;
-					}
-
-					#klik2{
-						grid-row:6/7;
-						grid-column: 3/4;
-					}
-
-					table {
-						grid-column: 1/4;
-					    font-family: arial, sans-serif;
-					    border-collapse: collapse;
-					}
-
-					#wat{
-						color: #00AEEF;
-						/*font-family: "Benfont", sans-serif;*/
-					}
-
 					#onderwerp{
 						background-color: #00AEEF;
 						border-radius: 10px;
@@ -716,22 +578,9 @@ body{
 						color: white
 					}
 
-					th{
-						background-color: white;
+					#wat{
+						color: #00AEEF;
 					}
-
-					td, th {
-					    text-align: left;
-					    padding: 8px;
-					}
-
-					tr:nth-child(odd) {
-					    background-color: #F7F7F7;
-					}
-
-						.vergelijk-lijst h5{
-							grid-column: 1/5;
-						}
 
 							.vergelijk-telefoon-1{
 								background-image: url("../Afbeeldingen/Toestellen/p20.png");
@@ -771,253 +620,271 @@ body{
 
 							}
 
-							#blur{
-								filter: none;
-							}
-
 							#weg-popup{
 								width: 50px;
 								height: 50px;
 								background-color: #00AEEF;
 							}
 
-							.gekozen-abonnement{
-			                    display: grid;
-			                    grid-template-columns: 30% 40% 30%;
-			                    grid-template-rows: 80% 20%;
-			                    background-color: #00AEEF;
-			                    height: 50%;
-			                    border-radius: 20px; 
-			                }
-
-			                	.gekozen-wijzig,.gekozen-kiezen{
-			                		font-family: "Benfont", sans-serif;
-			                		font-size: 110%;
-			                		height: 80%;
-									margin:0% 10%;
-									border-radius: 15px;
-									grid-row:2/3;
-			                	}
-
-			                	.gekozen-wijzig{
-									color: white;
-									background-color: transparent;
-									border: 2px solid white;
-									grid-column: 1/2;
-								}
-
-									.gekozen-wijzig:hover{
-										transition:background-color .2s;
-										transition:color .2s;
-										background-color: white;
-										color:black;
-									}
-
-								.gekozen-kiezen{
+							#kiestelefoon1,#kiestelefoon2{
 									color: white;
 									background-color: black;
 									border:none;
-									grid-column: 3/4;
-								}
+									height: 20%;
+									border-radius: 15px;
+							}
 
-									.gekozen-kiezen:hover{
-										transition:background-color .2s;
-										transition:color .2s;
-										background-color: rgba(0.0.0.0.6);
-										color: rgba(255,255,255,0.9);
-									}
+							#kiestelefoon1{
+								grid-row:6/7;
+								grid-column: 2/3;
+							}
 
+							#kiestelefoon2{
+								grid-row:6/7;
+								grid-column: 3/4;
+							}
 
-			                	.gekozen-abonnement h1{
-			                		grid-column: 2/3;
-			                		grid-row:1/2;
-			                		justify-content: left;
-			                	}
+					/*GEKOZEN*/
 
-			                	.gekozen-abonnement h2{
-			                		grid-column: 3/3;
-			                		grid-row:2/2;
-			     					font-family: "Benfont", sans-serif;
-			                		color: white;
-			                	}
+				.gekozen-abonnement{
+                    display: grid;
+                    grid-template-columns: 30% 40% 30%;
+                    grid-template-rows: 80% 20%;
+                    background-color: #00AEEF;
+                    height: 50%;
+                    border-radius: 20px; 
+                }
 
-			                	.gekozen-telefoon{
-			                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
-			                		grid-column: 1/2;
-			                		grid-row:1/2;
-			                		background-position: center;
-			                		background-repeat: no-repeat;
-			                		background-size: contain;
-			                		height: 250px;
-			                		margin-top: 10%;
-			                	}
+    	           	.gekozen-abonnement h1{
+    	           		grid-column: 2/3;
+    	           		grid-row:1/2;
+    	           		justify-content: left;
+    	           	}
 
-			                	.controle-secties{
-			                		display: grid;
-			                		grid-template-columns: 48% 2% 48%;
-			                	}
+    	           	.gekozen-abonnement h2{
+    	           		grid-column: 3/3;
+    	           		grid-row:2/2;
+    					font-family: "Benfont", sans-serif;
+    	           		color: white;
+    	           	}
 
-				                	.jouw-gegevens,.bestelling{
-				                		margin-top: 10%;
-				                		display: grid;
-				                		grid-template-columns: 10% 45% 35% 10% ;
-				                		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
-				                		padding: 3%;
-				                	}
+    	           	.gekozen-telefoon{
+    	           		background-image: url("../Afbeeldingen/Toestellen/s8.png");
+    	           		grid-column: 1/2;
+    	           		grid-row:1/2;
+    	           		background-position: center;
+    	           		background-repeat: no-repeat;
+    	           		background-size: contain;
+    	           		height: 250px;
+    	           		margin-top: 10%;
+    	           	}
 
-				                	.bestelling{
-				                		grid-template-rows: 20% 60% 20%;
-				                	}
+                	.gekozen-wijzig,.gekozen-kiezen{
+                		font-family: "Benfont", sans-serif;
+                		font-size: 110%;
+                		height: 80%;
+						margin:0% 10%;
+						border-radius: 15px;
+						grid-row:2/3;
+                	}
 
-				                	.bestelling-toestel{
-				                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
-				                		background-position: center;
-										background-repeat: no-repeat;
-				                		background-size: 80%;				                		
-				                		grid-column: 2/3;
-				                		grid-row:2/3;
-				                		width: 60%;
-				                	}
+                	.gekozen-wijzig{
+						color: white;
+						background-color: transparent;
+						border: 2px solid white;
+						grid-column: 1/2;
+					}
 
-				                	.jouw-gegevens h1,.bestelling h1{
-				                		grid-column:2/3;
-				                		color: #00AEEF;
-				                		font-size: 140%;
-				                		justify-content: left;
-				                		grid-row:1/2;
-				                	}
+						.gekozen-wijzig:hover{
+							transition:background-color .2s;
+							transition:color .2s;
+							background-color: white;
+							color:black;
+						}
 
-				                	#controle-links{
-				                		font-family: "Benfont", sans-serif;
-				                		font-size: 100%;
-				                		grid-column:2/3;
-				                		justify-content: left;
-				                		/*grid-row:1/2;*/
-				                	}
+					.gekozen-kiezen{
+						color: white;
+						background-color: black;
+						border:none;
+						grid-column: 3/4;
+					}
 
-				                	#controle-rechts{
-				                		grid-column: 3/4;
-				                		font-family: "Benfont", sans-serif;
-				                		font-size: 100%;
-				                		justify-content: left;
-				                	}
+						.gekozen-kiezen:hover{
+							transition:background-color .2s;
+							transition:color .2s;
+							background-color: rgba(0.0.0.0.6);
+							color: rgba(255,255,255,0.9);
+						}
 
-				                	.jouw-gegevens{
-				                		grid-column: 1/2;
-				                	}
+						/*CONTROLE*/ 
 
-				                	.bestelling{
-				                		grid-column: 3/4;
-				                	}
+                	.controle-secties{
+                		display: grid;
+                		grid-template-columns: 48% 2% 48%;
+                	}
 
-				                	.buttons{
-				                		display: grid;
-				                		grid-template-columns:30% 5% 30% 5% 30%;
-				                		height: 30%;
-				                		grid-template-rows: 30% 25% 30%;
-				                	}
+	                	.jouw-gegevens,.bestelling{
+	                		margin-top: 10%;
+	                		display: grid;
+	                		grid-template-columns: 10% 45% 35% 10% ;
+	                		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+	                		padding: 3%;
+	                	}
 
-				                		.terug-button,.wijzig-button,.bevestig-button{
-				                			border-radius: 15px;
-				                		}
+	                	.bestelling{
+	                		grid-template-rows: 20% 60% 20%;
+	                	}
 
-				                		.terug-button{
-				                			font-family: "Benfont", sans-serif;
-				                			font-size: 110%;
-				                			grid-column: 1/2;
-				                			grid-row: 2/3;
-				                			color: black;
-				                			width: 60%;
-				                			background-color: transparent;
-				                			border: 2px solid black;
-				                		}
+	                	.bestelling-toestel{
+	                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
+	                		background-position: center;
+							background-repeat: no-repeat;
+	                		background-size: 80%;				                		
+	                		grid-column: 2/3;
+	                		grid-row:2/3;
+	                		width: 60%;
+	                	}
 
-				                		.wijzig-button{
-				                			font-family: "Benfont", sans-serif;
-				                			font-size: 110%;
-				                			grid-column: 3/4;
-				                			grid-row: 2/3;
-				                			color: black;
-				                			background-color: transparent;
-				                			border: 2px solid black;
-				                		}
+	                	.jouw-gegevens h1,.bestelling h1{
+	                		grid-column:2/3;
+	                		color: #00AEEF;
+	                		font-size: 140%;
+	                		justify-content: left;
+	                		grid-row:1/2;
+	                	}
 
-				                		.bevestig-button{
-				                			font-family: "Benfont", sans-serif;
-				                			font-size: 110%;
-				                			grid-column: 3/4;
-				                			grid-row: 2/3;
-				                			color: white;
-				                			background-color: black;
-				                			border:none;
-				                			grid-column: 5/6;
-				                		}
+	                	#controle-links{
+	                		font-family: "Benfont", sans-serif;
+	                		font-size: 100%;
+	                		grid-column:2/3;
+	                		justify-content: left;
+	                	}
 
-				                		.terug-button:hover,.wijzig-button:hover,.terug-index:hover{
-											transition:background-color .2s;
-											transition:color .2s;
-											background-color: black;
-											color: white;
-										}
+	                	#controle-rechts{
+	                		grid-column: 3/4;
+	                		font-family: "Benfont", sans-serif;
+	                		font-size: 100%;
+	                		justify-content: left;
+	                	}
 
-					                	.bevestig-button:hover{
-											transition:background-color .2s;
-											transition:color .2s;
-											background-color: rgba(0.0.0.0.6);
-											color: rgba(255,255,255,0.9);
-										}
+	                	.jouw-gegevens{
+	                		grid-column: 1/2;
+	                	}
 
-									.blue{
-										color: #00AEEF;
-										margin:0% 2%;
-									}
+	                	.bestelling{
+	                		grid-column: 3/4;
+	                	}
 
-									.confetti{
-										z-index: 0;
-										background-image: url("../Afbeeldingen/confetti.png");
-										position: absolute;
-										width: 100%;
-										height: 100%;
-										/*top:20;*/
-										left: 0;
-										background-position: center;
-										background-repeat: repeat;
-										animation-name: confetti;
-										animation-duration: 3s;
-									}
+	                	.buttons{
+	                		display: grid;
+	                		grid-template-columns:30% 5% 30% 5% 30%;
+	                		height: 30%;
+	                		grid-template-rows: 30% 25% 30%;
+	                	}
 
-										@keyframes confetti {
-										    0% {height:100%}
-										    100% {height:200%;}
-										    
-										}
+	                		.terug-button,.wijzig-button,.bevestig-button{
+	                			border-radius: 15px;
+	                		}
 
-									.terug-index{
-				                			font-family: "Benfont", sans-serif;
-				                			font-size: 110%;
-				                			grid-column: 1/2;
-				                			grid-row: 2/3;
-				                			color: black;
-				                			background-color: white;
-				                			border: 2px solid black;
-				                			border-radius: 15px;
-				                		}
-				           
-				                .bedankje{
-				                	display: grid;
-				                	grid-template-columns: 1fr 3fr 1fr;
-				                }
+	                		.terug-button{
+	                			font-family: "Benfont", sans-serif;
+	                			font-size: 110%;
+	                			grid-column: 1/2;
+	                			grid-row: 2/3;
+	                			color: black;
+	                			width: 60%;
+	                			background-color: transparent;
+	                			border: 2px solid black;
+	                		}
 
-				                .bedankje h1, .bedankje h2{
-				                	justify-content: left;
-				                	grid-column: 2/3;
-				                }
+	                		.wijzig-button{
+	                			font-family: "Benfont", sans-serif;
+	                			font-size: 110%;
+	                			grid-column: 3/4;
+	                			grid-row: 2/3;
+	                			color: black;
+	                			background-color: transparent;
+	                			border: 2px solid black;
+	                		}
 
-				                .bedankje h1{
-				                	line-height: 10px;
-				                }
+	                		.bevestig-button{
+	                			font-family: "Benfont", sans-serif;
+	                			font-size: 110%;
+	                			grid-column: 3/4;
+	                			grid-row: 2/3;
+	                			color: white;
+	                			background-color: black;
+	                			border:none;
+	                			grid-column: 5/6;
+	                		}
 
-				                 .bedankje h2{
-				                 	line-height: 30px;
-				                 	font-size: 130%;
-				                 }
+	                		.terug-button:hover,.wijzig-button:hover,.terug-index:hover{
+								transition:background-color .2s;
+								transition:color .2s;
+								background-color: black;
+								color: white;
+							}
+
+		                	.bevestig-button:hover{
+								transition:background-color .2s;
+								transition:color .2s;
+								background-color: rgba(0.0.0.0.6);
+								color: rgba(255,255,255,0.9);
+							}
+
+							/*VERLENGD*/
+
+						.blue{
+							color: #00AEEF;
+							margin:0% 2%;
+						}
+
+						.confetti{
+							z-index: 0;
+							background-image: url("../Afbeeldingen/confetti.png");
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							/*top:20;*/
+							left: 0;
+							background-position: center;
+							background-repeat: repeat;
+							animation-name: confetti;
+							animation-duration: 3s;
+						}
+
+							@keyframes confetti {
+							    0% {height:100%}
+							    100% {height:200%;}
+							    
+							}
+
+						.terug-index{
+	                			font-family: "Benfont", sans-serif;
+	                			font-size: 110%;
+	                			grid-column: 1/2;
+	                			grid-row: 2/3;
+	                			color: black;
+	                			background-color: white;
+	                			border: 2px solid black;
+	                			border-radius: 15px;
+	                		}
+	           
+	                .bedankje{
+	                	display: grid;
+	                	grid-template-columns: 1fr 3fr 1fr;
+	                }
+
+	                .bedankje h1, .bedankje h2{
+	                	justify-content: left;
+	                	grid-column: 2/3;
+	                }
+
+	                .bedankje h1{
+	                	line-height: 10px;
+	                }
+
+	                 .bedankje h2{
+	                 	line-height: 30px;
+	                 	font-size: 130%;
+	                 }
