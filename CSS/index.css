@@ -28,6 +28,7 @@ body{
     }
 
 .content {
+	z-index: 2;
     display: grid;
     grid-template-rows: 1% 0.3fr 10fr;
     grid-column: 1/4;
@@ -35,6 +36,7 @@ body{
     margin-top: 20px;
 }
 		.ben-nav, .persoonlijk-nav{
+			z-index: 2;
 			display: flex;
 			justify-content: center;
 			color: white;
@@ -199,7 +201,7 @@ body{
 						}
 
 /* Toestel filter pagina Begin Autheur: Necati Unal*/
-#HuidigeAbonnement {
+/*#HuidigeAbonnement {
     margin-top: 20px;
     margin-bottom: 5px;
     height: auto;
@@ -251,86 +253,133 @@ body{
 {
     display:inline-block;
 }
+*/
 
+.persoonlijk 
+                {
+                    display: grid;
+                    background-color: #00AEEF;
+                    height: 60%;
+                    border-radius: 20px; 
+                }
+                    h1 
+                    {
+                        display: flex;
+                        justify-content: center;
+                        font-family: "Benfont", sans-serif;
+                        font-size: 220%;
+                    }
+                        span {
+                            color: white;
+                            margin: 0% 1%;
+                        }
 
+					h3
+                    {
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						text-align: bottom;
+						margin-top: 110%;
+						font-size: 140%;
+					}
 
-#persoonlijk {
-    display: grid;
-    background-color: #00AEEF;
-    height: 60%;
-    border-radius: 20px;
-    padding: 0px 20px 0px 20px;
-    font-family: BenFontNormal;
-}
+					.sim-only,.toestel{
+						background-color: #00AEEF;
+						color: white;
+					}
 
-#persoonlijk h1 {
-    grid-row: 1/2;
-    font-size: 70px;
-}
+					.sim-only:hover,.toestel:hover{
+						cursor: pointer;
+					}
 
-#bentitel {
-    color: white;
-    margin: 0% 1%;
-}
+					.sim-only{
+						grid-column: 2/3;
+						height: 350px;
+						background-image: url("../Afbeeldingen/sim.svg");
 
-#persoonlijk h2 {
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-    font-family: "Benfont", sans-serif;
-    font-size: 120%;
-}
+						/*background-image: url("../Afbeeldingen/simcard-blue.svg");*/
 
-#persoonlijk h2 {
-    color: white;
-}
+						background-repeat: no-repeat;
+						background-position: 50% 30%;
+						background-size: 80%;;
+						grid-row:2/3;
+						/*background-color: white;*/
+					}
 
-#persoonlijk h3 {
-    display: flex;
-    justify-content: center;
-    font-family: "Benfont", sans-serif;
-    text-align: bottom;
-    margin-top: 110%;
-    font-size: 140%;
-}
+					.toestel{
+						grid-column: 4/5;
+						grid-row:2/3;
+						height: 350px;
+						background-image: url("../Afbeeldingen/phone.svg");
+						background-repeat: no-repeat;
+						background-position: 50% 30%;
+						background-size: 80%;;
+					}
 
-.toestel-opties {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 3fr 0.8fr;
-    grid-row: 3/4;
-}
+						.completed{
+							background-image: url("../Afbeeldingen/check.png");
+							background-color: #00AEEF;
+							background-position: right;
+							background-size: contain;
+							background-repeat: no-repeat;
+						}
 
-.toestel-opties > div {
-    display: grid;
-    grid-template-rows: 0.3fr 2fr 0.6fr;
-    justify-content: center;
-    background-color: white;
-    border: 1px solid rgba(0,0,0,0.1);
-}
+						.active{
+							background-color: #00AEEF;
+						}
 
-.top {
-    display: flex;
-    font-size: 150%;
-}
+						.inactive{
+							background-color: rgba(0,0,0,0.1);
+						}
 
-#progressbar
-{
-}
+				.persoonlijk{
+					display: grid;
+					/*grid-template-rows: 0.3fr 1% 0% 0.3fr;*/
+					background-color: #00AEEF;
+					height: 60%;
+				}
 
-/* Toestel filter pagina Eind*/
-                
+					h1{
+						grid-row:1/2;
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 220%;
+					}
 
-					
+						#bentitel{
+							color: white;
+							margin:0% 1%;
+						}
 
-					
+					h2{
+						grid-row:2/3;
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						font-size: 120%;
+					}
+
+					.persoonlijk h2{
+						color: white;
+					}
+
+					h3{
+						display: flex;
+						justify-content: center;
+						font-family: "Benfont", sans-serif;
+						text-align: bottom;
+						margin-top: 110%;
+						font-size: 140%;
+
+					}
 
 					.sim-opties{
 						display: grid;
 						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 						grid-template-rows: 3fr 1.7fr;
 						grid-row:3/4;
-						height: 100%;
 					}
 
 						.sim-opties > div{
@@ -420,19 +469,52 @@ body{
 								color: rgba(255,255,255,0.9);
 							}
 
-					
+					.toestel-opties{
+						display: grid;
+						grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+						grid-template-rows: 3fr 0.8fr;
+						grid-row:3/4;
+						height: 120%;
+					}
 
-							/*.telefoon1-img,.telefoon2-img,.telefoon3-img{
+						.toestel-opties > div{
+							display: grid;
+							grid-template-rows: 0.3fr 2fr 0.6fr;
+							justify-content: center;
+							background-color: white;
+							border: 1px solid rgba(0,0,0,0.1);
+						}
+
+							.top{
+								display: flex;
+								font-size: 120%;
+							}
+
+						.telefoon-1,.telefoon-2,.telefoon-3{
+							display: flex;
+							justify-content: center;
+							background-color: white;
+						}
+
+							.telefoon1-img,.telefoon2-img,.telefoon3-img{
 								background-repeat: no-repeat;
 								background-size:50%;
 								background-position: top;
-							}*/
-
-							.telefoon{
-								
 							}
 
-							.persoonlijk h4{
+							.telefoon1-img{
+								background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
+							}
+
+							.telefoon2-img{
+								background-image: url("../Afbeeldingen/Toestellen/mate20.png");
+							}
+
+							.telefoon3-img{
+								background-image: url("../Afbeeldingen/Toestellen/p20.png");
+							}
+
+							h4{
 								display: flex;
 								font-size: 130%;
 								line-height: 1px;
@@ -458,10 +540,10 @@ body{
 
 					.keuze{
 						display: grid;
-						grid-template-columns: 30% 80%;
+						grid-template-columns: 20% 80%;
 						width: 100%;
 						height: 100vh;
-                        margin-top: 100px;
+						margin-top: 10%; DIT IS WEL HANDIG VOOR WAT RUIMTE 
 						background-color: white;
 						grid-column: 1/4;
 						grid-row:4/5;
@@ -471,11 +553,12 @@ body{
 							grid-column: 1/2;
 							box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
 							border-radius: 15px;
-                            
+							grid-row:1/4;
 						}
 
 							#zoek-toestel{
 								width: 100%;
+								height: 5%;
 								background-image: url("../Afbeeldingen/search.svg"); 
 								background-repeat: no-repeat;
 								background-size: 10%;
@@ -492,7 +575,7 @@ body{
 									font-size: 150%;
 									border:none;
 									margin-top: 1%;
-									border-bottom: 1px solid rgba(0,0,0,0.1);
+									border-bottom: 1px solid black;
 									grid-row:1/2;
 								}
 
@@ -505,7 +588,6 @@ body{
 
 								#een{
 									grid-row:2/3;
-									background-color: green;
 									
 								}
 
@@ -532,24 +614,24 @@ body{
 								}
 
 									input[type=checkbox]{
-									  -webkit-transform: scale(2);
+									  /* Double-sized Checkboxes */
+									  -ms-transform: scale(2); /* IE */
+									  -moz-transform: scale(2); /* FF */
+									  -webkit-transform: scale(2); /* Safari and Chrome */
+									  -o-transform: scale(2); /* Opera */
 									  padding: 10px;
 									  margin-left: 10px;
 									  margin-top: 40px;
 									}
 
-									input[type=button]{
-										display: inline-block;
-									}
-
-								.merk h5{
+								h5{
 									font-family: "Benfont", sans-serif;
 									grid-column: 2/3;
 									font-size: 120%;
 									grid-row:1/2;
 								}
 
-								.merk h6{
+								h6{
 									grid-column: 3/4;
 									color: #00AEEF;
 									grid-row:1/2;
@@ -559,10 +641,10 @@ body{
 
 						.keuzemenu{
 							display: grid;
-							/*grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;*/
+							grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 							grid-template-rows: 3fr 0.8fr;
-							/*grid-row:1/4;*/
-							/*height: 120%;*/
+							grid-row:1/4;
+							height: 120%;
 							grid-column: 2/3;
 						}
 
@@ -871,7 +953,7 @@ body{
 				                			grid-column: 5/6;
 				                		}
 
-				                		.terug-button:hover,.wijzig-button:hover{
+				                		.terug-button:hover,.wijzig-button:hover,.terug-index:hover{
 											transition:background-color .2s;
 											transition:color .2s;
 											background-color: black;
@@ -887,13 +969,55 @@ body{
 
 									.blue{
 										color: #00AEEF;
+										margin:0% 2%;
 									}
 
 									.confetti{
+										z-index: 0;
 										background-image: url("../Afbeeldingen/confetti.png");
 										position: absolute;
 										width: 100%;
 										height: 100%;
+										/*top:20;*/
+										left: 0;
 										background-position: center;
-										background-repeat: repeat-x;
+										background-repeat: repeat;
+										animation-name: confetti;
+										animation-duration: 3s;
 									}
+
+										@keyframes confetti {
+										    0% {height:100%}
+										    100% {height:200%;}
+										    
+										}
+
+									.terug-index{
+				                			font-family: "Benfont", sans-serif;
+				                			font-size: 110%;
+				                			grid-column: 1/2;
+				                			grid-row: 2/3;
+				                			color: black;
+				                			background-color: white;
+				                			border: 2px solid black;
+				                			border-radius: 15px;
+				                		}
+				           
+				                .bedankje{
+				                	display: grid;
+				                	grid-template-columns: 1fr 3fr 1fr;
+				                }
+
+				                .bedankje h1, .bedankje h2{
+				                	justify-content: left;
+				                	grid-column: 2/3;
+				                }
+
+				                .bedankje h1{
+				                	line-height: 10px;
+				                }
+
+				                 .bedankje h2{
+				                 	line-height: 30px;
+				                 	font-size: 130%;
+				                 }

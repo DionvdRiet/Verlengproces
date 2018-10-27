@@ -5,28 +5,29 @@
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
-    <nav class="ben-nav">
-		<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
-		<a href="">Sim Only</a>
-		<a href="">Telefoons</a>
-		<a href="">Studentenkorting</a>
-		<a href="">Klantenservice</a>
-		<input type="text" name="zoeken" id="nav-zoekbalk" placeholder="Waar ben je naar op zoek?">
-		<a href="">Log in</a>
-    </nav>
-	<nav class="persoonlijk-nav">
-		<a href="">Belstatus</a>
-		<a href="">Facturen</a>
-		<a href="">Abonnement</a>
-		<a href="">Toestel en sim</a>
-		<a href="">Gegevens</a>
-		<a href="">Vriendenvoordeel</a>
-		<a href="">Contact</a>
-	</nav>
+<nav class="ben-nav">
+				<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
+				<a href="">Sim Only</a>
+				<a href="">Telefoons</a>
+				<a href="">Studentenkorting</a>
+				<a href="">Klantenservice</a>
+				<input type="text" name="zoeken" id="nav-zoekbalk" placeholder="Waar ben je naar op zoek?">
+				<a href="">Log in</a>
+			</nav>
+			<nav class="persoonlijk-nav">
+				<a href="">Belstatus</a>
+				<a href="">Facturen</a>
+				<a href="">Abonnement</a>
+				<a href="">Toestel en sim</a>
+				<a href="">Gegevens</a>
+				<a href="">Vriendenvoordeel</a>
+				<a href="">Contact</a>
+			</nav>
 	<div class="grid">
 		<div class="content">
 			<div class="informatie">
-				<div id="progressbar">
+				<div class="progress">
+					<title>Abonnement verlengen</title>
 					<ul>
 						<li class="completed">1. Type abonnement</li>
 						<li class="active">2. Toestel Kiezen</li>
@@ -34,69 +35,38 @@
 					</ul>
 				</div>
 
-                <div id="HuidigeAbonnement">
-                    
-                    <img src="../Afbeeldingen/Toestellen/Apple-iPhone-7-black-front.gif" alt="Huidige toestel" />
-                    <div>
-                        <h5>Huidig abonnement: </h5> <span>Apple Iphone 6s Spacegrey</span>
-                    </div>
-                    <div id="Abonnement">
-                        <div>
-                            <h1> 200 </h1>
-                        </div>
-                        <div>
-                            <h1> 2000MB&#39;</h1>
-                        </div>
-                        <div>
-                            <h1> &euro;23,00 </h1>
-                        </div>
-                        <div>
-                            <span> &euro;23,00 </span>
-                        </div>
-                        <div>
-                            <span> &euro;23,00 </span>
-                        </div>
-                        <div>
-                            <span> &euro;23,00 </span>
-                        </div>
-
-                    </div>
-                </div>
-
-				<div id="persoonlijk">
+				<div class="persoonlijk">
 					<h1>Ik <span id="bentitel">Ben</span> Persoonlijk</h1>
 					<h2>Ik heb een abonnement voor je samengesteld op basis van je verbruik van de afgelopen 2 jaar bij Ben.</h2>
 					<div class="toestel-opties">
-						<div class="telefoon">
+						<div class="telefoon-1">
 							<h1 class="top">Samsung Galaxy S7</h1>
-							<img src="Afbeeldingen/Toestellen/p-smart.png" alt="Toestel P-smart" />
+							<div class="telefoon1-img"></div>
+							<h4>100 min/sms</h4>
+							<h4>2000mb internet (4g)</h4>
+							<h4>100 min/sms</h4>
+							<h4>2000mb internet (4g)</h4>
+							<h4 onclick="location.href='vergelijk.html'">Vergelijk toestel</h4>
+							<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
+						</div>
+						<div class="telefoon-2">
+							<h1 class="top">Samsung Galaxy S7</h1>
+							<div class="telefoon2-img"></div>
 							<h4>100 min/sms</h4>
 							<h4>2000mb internet (4g)</h4>
 							<h4>100 min/sms</h4>
 							<h4>2000mb internet (4g)</h4>
 							<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-							<h4 onclick="location.href='vergelijk.html'">Vergelijk toestel</h4>
 						</div>
-						<div class="telefoon">
+						<div class="telefoon-3">
 							<h1 class="top">Samsung Galaxy S7</h1>
-                            <img src="Afbeeldingen/Toestellen/mate20.png" alt="Toestel Mate 20" />
+							<div class="telefoon3-img"></div>
 							<h4>100 min/sms</h4>
 							<h4>2000mb internet (4g)</h4>
 							<h4>100 min/sms</h4>
 							<h4>2000mb internet (4g)</h4>
 							<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-							<h4 onclick="location.href='vergelijk.html'">Vergelijk toestel</h4>
 						</div>
-                        <div class="telefoon">
-                            <h1 class="top">Samsung Galaxy S7</h1>
-                            <img src="Afbeeldingen/Toestellen/p20.png" alt="Toestel Mate 20" />
-                            <h4>100 min/sms</h4>
-                            <h4>2000mb internet (4g)</h4>
-                            <h4>100 min/sms</h4>
-                            <h4>2000mb internet (4g)</h4>
-                            <input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-                            <h4 onclick="location.href='vergelijk.html'">Vergelijk toestel</h4>
-                        </div>
 
 						<input type="button" name="wijzig" class="wijzig" value="WIJZIG BUNDEL">
 						<input type="button" name="kiezen" class="kiezen" value="IK WIL DEZE BUNDEL">
@@ -105,64 +75,57 @@
 				</div>
 			</div>
 					<div class="keuze">
-					    <div class="filter">
-						    <h1>Filters</h1>
-						    <input type="text" name="zoekbalk" id="zoek-toestel" placeholder="               Vul hier je zoekterm in...">
-						    <div class="merk">
-							    <form>
-								    <fieldset>Merk</fieldset>
-								    <div id="een" ><input type="checkbox" name="apple"><h5>Apple 15</h5><h6>15</h6></div>
-								    <div id="twee"><input type="checkbox" name="huawei"><h5>Huawei</h5><h6>15</h6></div>
-								    <div id="drie"><input type="checkbox" name="samsung"><h5>Samsung</h5><h6>15</h6></div>
-								    <div id="vier"><input type="checkbox" name="apple"><h5>LG</h5><h6>15</h6></div>
-							    </form>
-							    <form>
-								    <fieldset>Opslag</fieldset>
-								    <div id="een" ><input type="checkbox" name="8GB"><h5>8 GB</h5><h6>7</h6></div>
-								    <div id="twee"><input type="checkbox" name="16GB"><h5>16 GB</h5><h6>15</h6></div>
-								    <div id="drie"><input type="checkbox" name="32GB"><h5>32 GB</h5><h6>14</h6></div>
-								    <div id="vier"><input type="checkbox" name="64GB"><h5>64 GB</h5><h6>9</h6></div>
-							    </form>
-							    <form>
-								    <fieldset>Opslag</fieldset>
-								    <div id="een" ><input type="checkbox" name="8GB"><h5>8 GB</h5><h6>7</h6></div>
-								    <div id="twee"><input type="checkbox" name="16GB"><h5>16 GB</h5><h6>15</h6></div>
-								    <div id="drie"><input type="checkbox" name="32GB"><h5>32 GB</h5><h6>14</h6></div>
-								    <div id="vier"><input type="checkbox" name="64GB"><h5>64 GB</h5><h6>9</h6></div>
-							    </form>
+					<div class="filter">
+						<h1>Filters</h1>
+						<input type="text" name="zoekbalk" id="zoek-toestel" placeholder="              Vul hier je zoekterm in...">
+						<div class="merk">
+							<form>
+								<fieldset>Merk</fieldset>
+								<div id="een" ><input type="checkbox" name="apple"><h5>Apple 15</h5><h6>15</h6></div>
+								<div id="twee"><input type="checkbox" name="huawei"><h5>Huawei</h5><h6>15</h6></div>
+								<div id="drie"><input type="checkbox" name="samsung"><h5>Samsung</h5><h6>15</h6></div>
+								<div id="vier"><input type="checkbox" name="apple"><h5>LG</h5><h6>15</h6></div>
+							</form>
+							<form>
+								<fieldset>Merk</fieldset>
+								<div id="een" ><input type="checkbox" name="apple"><h5>Apple 15</h5><h6>15</h6></div>
+								<div id="twee"><input type="checkbox" name="huawei"><h5>Huawei</h5><h6>15</h6></div>
+								<div id="drie"><input type="checkbox" name="samsung"><h5>Samsung</h5><h6>15</h6></div>
+								<div id="vier"><input type="checkbox" name="apple"><h5>LG</h5><h6>15</h6></div>
+							</form>
 
-						    </div>
-					    </div>
+						</div>
+					</div>
 
 					<div class="keuzemenu">
 						<div class="telefoon-1">
-						    <h1 class="top">Samsung Galaxy S7</h1>
-						    <div class="telefoon1-img"></div>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-					    </div>
-					    <div class="telefoon-2">
-						    <h1 class="top">Samsung Galaxy S7</h1>
-						    <div class="telefoon2-img"></div>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-					    </div>
-					    <div class="telefoon-3">
-						    <h1 class="top">Samsung Galaxy S7</h1>
-						    <div class="telefoon3-img"></div>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <h4>100 min/sms</h4>
-						    <h4>2000mb internet (4g)</h4>
-						    <input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
-					    </div>
-				    </div>
+						<h1 class="top">Samsung Galaxy S7</h1>
+						<div class="telefoon1-img"></div>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
+					</div>
+					<div class="telefoon-2">
+						<h1 class="top">Samsung Galaxy S7</h1>
+						<div class="telefoon2-img"></div>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
+					</div>
+					<div class="telefoon-3">
+						<h1 class="top">Samsung Galaxy S7</h1>
+						<div class="telefoon3-img"></div>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<h4>100 min/sms</h4>
+						<h4>2000mb internet (4g)</h4>
+						<input type="button" name="kat" class="toestel-bekijken" value="BEKIJK TOESTEL">
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
