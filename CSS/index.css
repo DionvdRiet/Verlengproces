@@ -32,9 +32,42 @@ body{
     display: grid;
     grid-template-rows: 1% 0.3fr 10fr;
     grid-column: 1/4;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 15% 5%;
     margin-top: 20px;
 }
+
+	.ananas{
+		background-image: url("../Afbeeldingen/ananas.png");
+		background-position: -40% 50%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 80%;
+		grid-column: 3/4;
+		grid-row:2/4;
+	}
+
+	.ananas-links{
+		background-image: url("../Afbeeldingen/ananas.png");
+		background-position: -40% 50%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 80%;
+		grid-column: 1/2;
+		grid-row:2/4;
+	}
+
+		.ananas-tekst{
+			font-family: "Benfont", sans-serif;
+			font-size: 160%;
+			text-align: center;
+		}
+
+		.tekst-lijn{
+			  width: 150px; 
+			  height: 120px;  
+			  border: solid 5px #000;
+			  border-color: transparent #00AEEF transparent transparent;
+			  border-radius: 50%/100px 100px 100px 0;
+		}
+		
 		.ben-nav, .persoonlijk-nav{
 			z-index: 2;
 			display: flex;
@@ -337,10 +370,25 @@ body{
 
 			.toestel-opties > div{
 				display: grid;
-				grid-template-rows: 0.3fr 2fr 0.6fr;
+				grid-template-rows: 0.3fr 1.5fr 1.5fr;
 				justify-content: center;
 				background-color: white;
 				border: 1px solid rgba(0,0,0,0.1);
+			}
+
+			.toestel-opties h1{
+				display: flex;
+				font-size: 120%;
+				justify-content: center;
+			}
+
+			.toestel-opties h4{
+				color: red;
+				display: flex;
+				font-size: 130%;
+				/*line-height: -10%;*/
+				justify-content: center;
+				font-family: "Benfont", sans-serif;
 			}
 
 				.top{
@@ -356,7 +404,7 @@ body{
 
 				.telefoon1-img,.telefoon2-img,.telefoon3-img{
 					background-repeat: no-repeat;
-					background-size:50%;
+					background-size:45%;
 					background-position: top;
 				}
 
@@ -370,14 +418,6 @@ body{
 
 				.telefoon3-img{
 					background-image: url("../Afbeeldingen/Toestellen/p20.png");
-				}
-
-				h4{
-					display: flex;
-					font-size: 130%;
-					line-height: 1px;
-					justify-content: center;
-					font-family: "Benfont", sans-serif;
 				}
 
 				.telefoon-1{
@@ -394,6 +434,7 @@ body{
 
 					.toestel-bekijken{
 						height: 50px;
+						margin: 10% 0%;
 					}
 
 					.keuze{
@@ -534,21 +575,32 @@ body{
 					filter: none;
 				}
 
-				table {
+
+				table{
+					line-height: 30px;
+					font-size: 110%;
+					font-family: Benfont, sans-serif;
+				}
+
+				.table-container{
+					grid-column: 1/5;
+				}
+
+				.table-container table {
 					grid-column: 1/4;
 				    font-family: arial, sans-serif;
 				    border-collapse: collapse;
 				}
 
-				tr:nth-child(odd) {
+				.table-container tr:nth-child(odd) {
 				    background-color: #F7F7F7;
 				}
 
-				th{
+				.table-container th{
 					background-color: white;
 				}
 
-				td, th {
+				.table-container td, .table-container th {
 				    text-align: left;
 				    padding: 8px;
 				}
@@ -881,10 +933,12 @@ body{
 	                }
 
 	                .bedankje h1{
+	                	font-family: "Benfont", sans-serif;
 	                	line-height: 10px;
 	                }
 
 	                 .bedankje h2{
+	                 	font-family: "BenfontnNormal", sans-serif;
 	                 	line-height: 30px;
 	                 	font-size: 130%;
 	                 }

@@ -25,6 +25,11 @@
 	</nav>
 	<div class="grid">
 		<div class="content">	
+			<div class="ananas-links">
+				<h1 class="ananas-tekst">Wil je een 3e telefoon toevoegen om te vergelijken? <span class="blue">Klik</span> op + aan de rechterkant
+				</h1>
+				<div class="tekst-lijn"></div>
+			</div>
 			<div class="informatie">
 				<div class="progress">
 					<title>Abonnement verlengen</title>
@@ -39,114 +44,116 @@
 				</div>
 				<div  id="blur" class="vergelijk-lijst">
 					<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div><div class="plus" onclick="popup()"></div>
-					<table id="abonnement">
-						<tr>
-							<th id="onderwerp">Abonnement</th>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
-							<td id="wat">Belminuten/sms</td>
-							<td>100</td>
-							<td>300</td>
-						</tr>
-						<tr>
-							<td id="wat">Internet</td>
-							<td>1000 mb</td>
-							<td>2000 mb</td>
-						</tr>
-						<tr>
-							<td id="wat">Prijs</td>
-							<td>€16,00 per maand</td>
-							<td>€18,00 per maand</td>
-						</tr>
-						<tr>
-							<td id="wat">Toestelprijs</td>
-							<td>€0,00 per maand</td>
-							<td>€0,00 per maand</td>
-						</tr>
-					</table>
-					<table id="algemeen">
-						<tr>
-							<th id="onderwerp">Algemeen</th>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
-							<td id="wat">Dual SIM</td>
-							<td>Nee</td>
-							<td>Ja</td>
-						</tr>
-						<tr>
-							<td id="wat">Type simkaart</td>
-							<td>nanoSIM</td>
-							<td>nanoSIM</td>
-						</tr>
-						<tr>
-							<td id="wat">Mobiel</td>
-							<td>3G, 4G</td>
-							<td>3G, 4G</td>
-						</tr>
-					</table>
-					<table id="display">
-						<tr>
-							<th id="onderwerp">Display</th>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
-							<td id="wat">Type beelscherm</td>
-							<td>SAMOLED</td>
-							<td>SAMOLED</td>
-						</tr>
-						<tr>
-							<td id="wat">Schermgrootte</td>
-							<td>5,1 inch</td>
-							<td>5,8 inch</td>
-						</tr>
-						<tr>
-							<td id="wat">Schermresolutie</td>
-							<td>2560 x 1440</td>
-							<td>2960 x 1440</td>
-						</tr>
-						<tr>
-							<td id="wat">Pixeldichtheid</td>
-							<td>520 ppi</td>
-							<td>570 ppi</td>
-						</tr>
-						<tr>
-							<td id="wat">Aantal kleuren</td>
-							<td>16.780.000</td>
-							<td>16.780.000</td>
-						</tr>
-					</table>
-					<table id="prestaties">
-						<tr>
-							<th id="onderwerp">Prestaties</th>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
-							<td id="wat">Belminuten/sms</td>
-							<td>100</td>
-							<td>300</td>
-						</tr>
-						<tr>
-							<td id="wat">Internet</td>
-							<td>1000 mb</td>
-							<td>2000 mb</td>
-						</tr>
-						<tr>
-							<td id="wat">Prijs</td>
-							<td>€16,00 per maand</td>
-							<td>€18,00 per maand</td>
-						</tr>
-						<tr>
-							<td id="wat">Toestelprijs</td>
-							<td>€0,00 per maand</td>
-							<td>€0,00 per maand</td>
-						</tr>
-					</table>
+					<div class="table-container">
+						<table id="abonnement">
+							<tr>
+								<th id="onderwerp">Abonnement</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td id="wat">Belminuten/sms</td>
+								<td>100</td>
+								<td>300</td>
+							</tr>
+							<tr>
+								<td id="wat">Internet</td>
+								<td>1000 mb</td>
+								<td>2000 mb</td>
+							</tr>
+							<tr>
+								<td id="wat">Prijs</td>
+								<td>€16,00 per maand</td>
+								<td>€18,00 per maand</td>
+							</tr>
+							<tr>
+								<td id="wat">Toestelprijs</td>
+								<td>€0,00 per maand</td>
+								<td>€0,00 per maand</td>
+							</tr>
+						</table>
+						<table id="algemeen">
+							<tr>
+								<th id="onderwerp">Algemeen</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td id="wat">Dual SIM</td>
+								<td>Nee</td>
+								<td>Ja</td>
+							</tr>
+							<tr>
+								<td id="wat">Type simkaart</td>
+								<td>nanoSIM</td>
+								<td>nanoSIM</td>
+							</tr>
+							<tr>
+								<td id="wat">Mobiel</td>
+								<td>3G, 4G</td>
+								<td>3G, 4G</td>
+							</tr>
+						</table>
+						<table id="display">
+							<tr>
+								<th id="onderwerp">Display</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td id="wat">Type beelscherm</td>
+								<td>SAMOLED</td>
+								<td>SAMOLED</td>
+							</tr>
+							<tr>
+								<td id="wat">Schermgrootte</td>
+								<td>5,1 inch</td>
+								<td>5,8 inch</td>
+							</tr>
+							<tr>
+								<td id="wat">Schermresolutie</td>
+								<td>2560 x 1440</td>
+								<td>2960 x 1440</td>
+							</tr>
+							<tr>
+								<td id="wat">Pixeldichtheid</td>
+								<td>520 ppi</td>
+								<td>570 ppi</td>
+							</tr>
+							<tr>
+								<td id="wat">Aantal kleuren</td>
+								<td>16.780.000</td>
+								<td>16.780.000</td>
+							</tr>
+						</table>
+						<table id="prestaties">
+							<tr>
+								<th id="onderwerp">Prestaties</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td id="wat">Belminuten/sms</td>
+								<td>100</td>
+								<td>300</td>
+							</tr>
+							<tr>
+								<td id="wat">Internet</td>
+								<td>1000 mb</td>
+								<td>2000 mb</td>
+							</tr>
+							<tr>
+								<td id="wat">Prijs</td>
+								<td>€16,00 per maand</td>
+								<td>€18,00 per maand</td>
+							</tr>
+							<tr>
+								<td id="wat">Toestelprijs</td>
+								<td>€0,00 per maand</td>
+								<td>€0,00 per maand</td>
+							</tr>
+						</table>
+					</div>
 						<input type="button" name="wijzig" id="kiestelefoon1" value="KIES TELEFOON 1" onclick="location.href='gekozen.html'">
 						<input type="button" name="kiezen" id="kiestelefoon2" value="KIES TELEFOON 2">
 				</div>			
