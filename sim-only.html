@@ -34,7 +34,7 @@
 				<div class="progress">
 					<title>Abonnement verlengen</title>
 					<ul>
-						<li class="completed">1. Type abonnement</li>
+						<li class="completed" onclick="location.href='index.html'">1. Type abonnement</li>
 						<li class="active">2. Bundel kiezen</li>
 						<li class="inactive">3. Controle</li>
 					</ul>
@@ -44,25 +44,42 @@
 					<h2>Ik heb een abonnement voor je samengesteld op basis van je verbruik van de afgelopen 2 jaar bij Ben.</h2>
 					<div class="sim-opties">
 						<div class="belminuten">
-							<h1 class="midden">300</h1>
+							<h1 class="midden" id="demo">300</h1>
 							<h1 class="type">Belminuten</h1>
 						</div>
 						<div class="internet">
-							<h1 class="midden">5000 Mb</h1>
+							<h1 class="midden" id="demo2">5000 Mb</h1>
 							<h1 class="type">Internet (4g)</h1>
 						</div>
 						<div class="prijs">
-							<h1 class="midden">€17,00</h1>
+							<h1 class="midden" id="prijs">€17,00</h1>
 							<h1 class="type">Prijs</h1>
 						</div>
-						<input type="button" name="" class="wijzig" value="WIJZIG BUNDEL">
+						<input type="button" name="" class="wijzig" value="WIJZIG BUNDEL" onclick="slidertest()">
 						<input type="button" name="" class="kiezen" value="IK WIL DEZE BUNDEL">
 					</div>
-					<div class="leegte"></div>
+							<div class="ruimte"></div>
 				</div>
 			</div>
+			<div class="deslider" id="slider">
+				<h4 class="slider-tekst-1">Belminuten/sms</h4>
+				<h4 class="slider-tekst-2">Internet (4g)</h4>
+				<input type="range" min="0" max="600" value="" step="300" class="slider" onchange="changeInputB(this);" id="myRange" >
+				<input type="range" min="0" max="10000" value="" step="1000" class="slider2" id="myRange2" onchange="changeInputM(this);">
+				<div class="slider-waarde-links">0</div>
+				<div class="slider-waarde-rechts">onbeperkt</div>
+				<div class="slider2-waarde-links">0</div>
+				<div class="slider2-waarde-rechts">onbeperkt</div>
+				<input type="button" name="" class="twee-jaar" value="TWEE JAAR">
+				<input type="button" name="" class="een-jaar" value="EEN JAAR">
+				<input type="button" name="" class="maand" value="MAAND">
+			</div>
+		</div>
 
 		</div>
 	</div>
+
+<script src="JS/slider.js"></script>
+<script src="JS/popup.js"></script>
 </body>
 </html>

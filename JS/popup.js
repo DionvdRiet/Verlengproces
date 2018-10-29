@@ -34,3 +34,8 @@ function gekozen(){
 	document.getElementById('vergelijk-lijst').style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
 	document.getElementById('vergelijk-lijst').style.backgroundColor = "blue";
 }
+
+function slidertest(){
+	document.getElementById('slider').style.transition = "opacity 0.3s ease-in-out";
+	document.getElementById('slider').style.opacity = "1";
+}
