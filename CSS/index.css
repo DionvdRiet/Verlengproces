@@ -224,62 +224,6 @@ body{
 
 		/*SIM-ONLY*/
 
-/* Toestel filter pagina Begin Autheur: Necati Unal*/
-#HuidigeAbonnement {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    height: auto;
-    display: grid;
-    border: 1px solid black;
-    border-radius: 15px;
-    grid-template-columns: 21% 50% 29%;
-    grid-template-rows: 100px auto;
-}
-
-#HuidigeAbonnement > .benBlue {
-    color: #00AEEF;
-}
-
-#HuidigeAbonnement > img{
-    width:75px;
-    height:150px;
-    margin-top:40px;
-    margin-left:80px;
-}
-
-#HuidigeAbonnement > div:first-of-type {
-    font-size: 30px;
-    grid-column: 2 / all;
-}
-
-#Abonnement {
-    grid-column: 2 / all;
-    grid-row: 2/auto;
-    display: grid;
-    column-gap: 5px;
-    row-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#Abonnement div {
-    justify-content:center;
-}
-#abonnement > span
-{
-    border:1px solid red;
-}
-
-#HuidigeAbonnement span {
-    color: #00AEEF;
-    margin-right: 50px;
-    font-weight:bolder;
-}
-
-#HuidigeAbonnement h5
-{
-    display:inline-block;
-}
-
 .persoonlijk {
     display: grid;
     background-color: #00AEEF;
