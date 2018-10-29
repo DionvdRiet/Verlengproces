@@ -280,13 +280,11 @@ body{
     display:inline-block;
 }
 
-#persoonlijk {
+.persoonlijk {
     display: grid;
     background-color: #00AEEF;
     height: 60%;
     border-radius: 20px;
-    padding: 0px 20px 0px 20px;
-    font-family: BenFontNormal;
 }
 	.persoonlijk h1{
 		display: flex;
