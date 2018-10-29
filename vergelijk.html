@@ -5,27 +5,31 @@
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
-<nav class="ben-nav">
-				<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
-				<a href="">Sim Only</a>
-				<a href="">Telefoons</a>
-				<a href="">Studentenkorting</a>
-				<a href="">Klantenservice</a>
-				<input type="text" name="zoeken" placeholder="Waar ben je naar op zoek?">
-				<a href="">Log in</a>
-			</nav>
-			<nav class="persoonlijk-nav">
-				<a href="">Belstatus</a>
-				<a href="">Facturen</a>
-				<a href="">Abonnement</a>
-				<a href="">Toestel en sim</a>
-				<a href="">Gegevens</a>
-				<a href="">Vriendenvoordeel</a>
-				<a href="">Contact</a>
-			</nav>
+	<nav class="ben-nav">
+		<img src="Afbeeldingen/logo.png" height="40px" width="80px" onclick="location.href='index.html'">
+		<a href="">Sim Only</a>
+		<a href="">Telefoons</a>
+		<a href="">Studentenkorting</a>
+		<a href="">Klantenservice</a>
+		<input type="text" name="zoeken" placeholder="Waar ben je naar op zoek?">
+		<a href="">Log in</a>
+	</nav>
+	<nav class="persoonlijk-nav">
+		<a href="">Belstatus</a>
+		<a href="">Facturen</a>
+		<a href="">Abonnement</a>
+		<a href="">Toestel en sim</a>
+		<a href="">Gegevens</a>
+		<a href="">Vriendenvoordeel</a>
+		<a href="">Contact</a>
+	</nav>
 	<div class="grid">
-		<div class="content">
-			
+		<div class="content">	
+			<div class="ananas-links">
+				<h1 class="ananas-tekst">Wil je een 3e telefoon toevoegen om te vergelijken? <span class="blue">Klik</span> op + aan de rechterkant
+				</h1>
+				<div class="tekst-lijn"></div>
+			</div>
 			<div class="informatie">
 				<div class="progress">
 					<title>Abonnement verlengen</title>
@@ -35,14 +39,17 @@
 						<li class="inactive">3. Controle</li>
 					</ul>
 				</div>
-
 				<div id="popup">
 					<div id="weg-popup" onclick="popdown()"></div>
+					<div class="pop-up-telefoons">
+						<div class="pop-up-telefoon-1"></div>
+						<div class="pop-up-telefoon-2"></div>
+						<div class="pop-up-telefoon-3"></div>
+					</div>
 				</div>
 				<div  id="blur" class="vergelijk-lijst">
-					
-						<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div><div class="plus" onclick="popup()"></div>
-						<!-- <div><h4>Belminuten/SMS</h4><h4>100</h4><h4>300</h4></div> -->
+					<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div><div class="plus" onclick="popup()"></div>
+					<div class="table-container">
 						<table id="abonnement">
 							<tr>
 								<th id="onderwerp">Abonnement</th>
@@ -70,7 +77,6 @@
 								<td>€0,00 per maand</td>
 							</tr>
 						</table>
-
 						<table id="algemeen">
 							<tr>
 								<th id="onderwerp">Algemeen</th>
@@ -93,7 +99,6 @@
 								<td>3G, 4G</td>
 							</tr>
 						</table>
-
 						<table id="display">
 							<tr>
 								<th id="onderwerp">Display</th>
@@ -126,7 +131,6 @@
 								<td>16.780.000</td>
 							</tr>
 						</table>
-
 						<table id="prestaties">
 							<tr>
 								<th id="onderwerp">Prestaties</th>
@@ -154,18 +158,13 @@
 								<td>€0,00 per maand</td>
 							</tr>
 						</table>
-						<input type="button" name="wijzig" id="klik1" value="KIES TELEFOON 1" onclick="location.href='gekozen.html'">
-						<input type="button" name="kiezen" id="klik2" value="KIES TELEFOON 2">
 					</div>
-					
-					</div>
-				</div>
-
+						<input type="button" name="wijzig" id="kiestelefoon1" value="KIES TELEFOON 1" onclick="location.href='gekozen.html'">
+						<input type="button" name="kiezen" id="kiestelefoon2" value="KIES TELEFOON 2">
+				</div>			
 			</div>
 		</div>
 	</div>
-
-
 <script src="js/popup.js"></script>
 </body>
 </html>
