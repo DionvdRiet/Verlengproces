@@ -584,29 +584,89 @@ body{
 					font-size: 120%;
 				}
 
-			.telefoon-1,.telefoon-2,.telefoon-3{
-				display: flex;
-				justify-content: center;
-				background-color: white;
+            .telefoon-1, .telefoon-2, .telefoon-3 {
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .samsung1-img, .samsung2-img, .samsung3-img {
+                background-repeat: no-repeat;
+                background-size:contain;
+            }
+            .apple1-img, .apple2-img, .apple3-img {
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .huawei1-img, .huawei2-img, .huawei3-img {
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            /*Samsung toestel afbeeldingen begin*/
+            .samsung1-img {
+                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy S8.png");
+            }
+
+            .samsung2-img {
+                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy S9.jpg");
+            }
+
+            .samsung3-img {
+                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy Note 9.jpg");
+            }
+
+            /*Samsung toestel afbeeldingen eind*/
+
+            /*Apple toestel afbeeldingen begin*/
+            .apple1-img {
+                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 6s.png");
+            }
+
+            .apple2-img {
+                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 7.gif");
+            }
+
+            .apple3-img {
+                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone Xs Max gold.jpg");
+            }
+
+            /*Apple toestel afbeeldingen eind*/
+
+            /*Apple toestel afbeeldingen begin*/
+.huawei1-img {
+    background-image: url("../Afbeeldingen/Toestellen/Huawei P smart.png");
+}
+
+.huawei2-img {
+    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 lite.jpeg");
+}
+
+.huawei3-img {
+    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 pro.png");
+}
+
+            /*Apple toestel afbeeldingen eind*/
+
+            .telefoon1-img {
+                background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+			.telefoon2-img{
+				background-image: url("../Afbeeldingen/Toestellen/mate20.png");
+                background-size: contain;
+                background-repeat: no-repeat;
 			}
 
-				.telefoon1-img,.telefoon2-img,.telefoon3-img{
-					background-repeat: no-repeat;
-					background-size:55%;
-					background-position: top;
-				}
-
-				.telefoon1-img{
-					background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
-				}
-
-				.telefoon2-img{
-					background-image: url("../Afbeeldingen/Toestellen/mate20.png");
-				}
-
-				.telefoon3-img{
-					background-image: url("../Afbeeldingen/Toestellen/p20.png");
-				}
+            .telefoon3-img {
+                background-image: url("../Afbeeldingen/Toestellen/p20.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
 
 				.telefoon-1{
 					grid-column: 2/3;
@@ -662,7 +722,6 @@ body{
 
 
 								.form-merk{
-									grid-row:1/2;
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
@@ -689,7 +748,6 @@ body{
 
 							form{
 								display: grid;
-								grid-template-rows: repeat(5,20%);
 							}
 
 								fieldset{
@@ -701,11 +759,9 @@ body{
 								}
 
 								#een,#twee,#drie,#vier{
-									/*background-color: red;*/
 									display: grid;
 									grid-template-columns: 20% 70% 10%;
 									height: 10%;
-									/*grid-template-rows: repeat(4,1%);*/
 								}
 
 								/*DIVS RONDOMFORM INPUT CHECKBOXJES*/

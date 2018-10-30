@@ -60,9 +60,6 @@ function AddBrandToShowList(brandToAdd)
 function ShowPhones()
 {
     if (showBrand.length == 0) {
-        // id = "apple"
-        // id = "samsung"
-        // id = "huawei"
         $('#apple').show();
         $('#samsung').show();
         $('#huawei').show();
