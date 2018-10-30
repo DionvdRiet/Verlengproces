@@ -25,17 +25,17 @@
 	</nav>
 	<div class="grid">
 		<div class="content">	
-			<div class="ananas-links">
+			<div class="ananas-vergelijk">
 				<h1 class="ananas-tekst">Wil je een 3e telefoon toevoegen om te vergelijken? <span class="blue">Klik</span> op + aan de rechterkant
 				</h1>
-				<div class="tekst-lijn"></div>
+				<div class="tekst-lijn-vergelijk"></div>
 			</div>
 			<div class="informatie">
 				<div class="progress">
 					<title>Abonnement verlengen</title>
 					<ul>
-						<li class="completed">1. Type abonnement</li>
-						<li class="active">2. Toestel kiezen</li>
+						<li class="completed" onclick="location.href='index.html'">1. Type abonnement</li>
+						<li class="active" onclick="location.href='toestellen.html'">2. Toestel kiezen</li>
 						<li class="inactive">3. Controle</li>
 					</ul>
 				</div>
@@ -44,17 +44,20 @@
 					<div class="pop-up-telefoons">
 						<div class="pop-up-telefoon-1"></div>
 						<div class="pop-up-telefoon-2"></div>
-						<div class="pop-up-telefoon-3"></div>
+						<div class="pop-up-telefoon-3" onclick="gekozen()"></div>
+						<h4 class="pop-up-tekst-1">Huawei P20</h4>
+						<h4 class="pop-up-tekst-2">iPhone 6s</h4>
+						<h4 class="pop-up-tekst-3">iPhone 7</h4>
 					</div>
 				</div>
-				<div  id="blur" class="vergelijk-lijst">
-					<div class="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2"></div><div class="plus" onclick="popup()"></div>
+				<div  id="blur" class="vergelijk-lijst" id="vergelijk-lijst">
+					<div class="vergelijk-telefoon-1" id="vergelijk-telefoon-1"></div><div class="vergelijk-telefoon-2" id="vergelijk-telefoon-2"></div><div id="vergelijk-telefoon-3"></div><div id="plus" onclick="popup()"></div>
 					<div class="table-container">
 						<table id="abonnement">
 							<tr>
 								<th id="onderwerp">Abonnement</th>
-								<th></th>
-								<th></th>
+								<th class="vergelijk-toestel-naam">Huawei P20 lite</th>
+								<th class="vergelijk-toestel-naam">Huawei Mate 20 lite</th>
 							</tr>
 							<tr>
 								<td id="wat">Belminuten/sms</td>
@@ -157,10 +160,16 @@
 								<td>€0,00 per maand</td>
 								<td>€0,00 per maand</td>
 							</tr>
+							<!-- <tr>
+								<td id="no-table"></td>
+								<td class="table-button-1">KIES DE HUAWEI P20 LITE</td>
+								<td class="table-button-2">KIES DE HUAWEI MATE 20 LITE</td>
+							</tr> -->
 						</table>
 					</div>
-						<input type="button" name="wijzig" id="kiestelefoon1" value="KIES TELEFOON 1" onclick="location.href='gekozen.html'">
-						<input type="button" name="kiezen" id="kiestelefoon2" value="KIES TELEFOON 2">
+						<input type="button" name="wijzig" id="kiestelefoon1" value="KIES DE HUAWEI P20 LITE" onclick="location.href='gekozen.html'">
+						<input type="button" name="kiezen" id="kiestelefoon2" value="KIES DE HUAWEI MATE 20 LITE">
+						<input type="button" name="kiezen" id="kiestelefoon3" value="KIES DE IPHONE 7">
 				</div>			
 			</div>
 		</div>

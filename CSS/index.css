@@ -30,7 +30,7 @@ body{
 .content {
 	z-index: 2;
     display: grid;
-    grid-template-rows: 1% 0.3fr 10fr;
+    /*grid-template-rows: 1% 0.3fr 10fr 5fr;*/ /* DIT ZORGT VOOR ECHT VEEL RUIMTE*/
     grid-column: 1/4;
     grid-template-columns: 20% 60% 15% 5%;
     margin-top: 20px;
@@ -40,7 +40,7 @@ body{
 		background-image: url("../Afbeeldingen/ananas.png");
 		background-position: -40% 50%; /* horizontaal% verticaal%*/
 		background-repeat: no-repeat;
-		background-size: 80%;
+		background-size: 100%;
 		grid-column: 3/4;
 		grid-row:2/4;
 	}
@@ -54,6 +54,15 @@ body{
 		grid-row:2/4;
 	}
 
+	.ananas-vergelijk{
+		background-image: url("../Afbeeldingen/ananas.png");
+		background-position:  0% 20%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 80%;
+		grid-column: 1/2;
+		grid-row:2/4;
+	}
+
 		.ananas-tekst{
 			font-family: "Benfont", sans-serif;
 			font-size: 160%;
@@ -61,11 +70,19 @@ body{
 		}
 
 		.tekst-lijn{
-			  width: 150px; 
-			  height: 120px;  
+			  width: 220px; 
+			  height: 300px;  
 			  border: solid 5px #000;
 			  border-color: transparent #00AEEF transparent transparent;
 			  border-radius: 50%/100px 100px 100px 0;
+		}
+
+		.tekst-lijn-vergelijk{
+			  width: 250px; 
+			  height: 200px;  
+			  border: solid 5px #000;
+			  border-color: transparent #00AEEF transparent transparent;
+			  border-radius: 30%/100px 100px 100px 0;
 		}
 		
 		.ben-nav, .persoonlijk-nav{
@@ -226,7 +243,8 @@ body{
 
 .persoonlijk {
     display: grid;
-    background-color: #00AEEF;  
+    background-color: #00AEEF;
+    /*height: 60%;*/
     border-radius: 20px;
 }
 	.persoonlijk h1{
@@ -266,13 +284,13 @@ body{
 		.sim-opties{
 			display: grid;
 			grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-			grid-template-rows: 3fr 1.7fr;
+			grid-template-rows: 2fr 1fr;
 			grid-row:3/4;
 		}
 
 			.sim-opties > div{
 				display: grid;
-				grid-template-rows: 0.3fr 0.5fr 0.3fr;
+				grid-template-rows: 0.3fr 0.5fr 0.1fr;
 				justify-content: center;
 				background-color: white;
 				border: 1px solid rgba(0,0,0,0.1);
@@ -318,6 +336,13 @@ body{
 				grid-row:2/3;
 			}
 
+				.wijzig:hover{
+					transition:background-color .2s;
+					transition:color .2s;
+					background-color: white;
+					color:black;
+				}
+
 				.wijzig-bundel-button:hover{
 					transition:background-color .2s;
 					transition:color .2s;
@@ -341,6 +366,133 @@ body{
 					background-color: rgba(0.0.0.0.6);
 					color: rgba(255,255,255,0.9);
 				}
+
+			.deslider{
+				width: 100%;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 1fr;
+				margin-top: 2%;
+				grid-row:4/5;
+				grid-column: 2/3;
+			}
+
+				.twee-jaar,.een-jaar,.maand{
+					color: white;
+					background-color: rgba(0,0,0,0.1);
+					border:none;
+					height: 60%;
+					font-family: "Benfont", sans-serif;
+					border-radius: 15px;
+				}
+
+				.twee-jaar:focus,.een-jaar:focus,.maand:focus{
+					background-color: #00AEEF
+				}
+
+				.twee-jaar{
+					grid-row:6/7;
+					grid-column: 2/3;
+				}
+
+				.een-jaar{
+					grid-row:6/7;
+					grid-column: 3/4;
+				}
+
+				.maand{
+					grid-row:6/7;
+					grid-column: 4/5;
+				}
+
+				.slider-tekst-1,.slider-tekst-2{
+					grid-column: 2/3;
+				}
+
+				.slider-tekst-1{
+					grid-row:3/4;
+				}
+
+			#slider{
+				opacity: 0;
+			}
+
+			.slider-waarde-links{
+				grid-column: 1/2;
+				grid-row:2/3;
+			}
+
+			.slider-waarde-rechts{
+				grid-column: 6;
+				grid-row:2/3;
+			}
+
+			.slider2-waarde-links{
+				grid-column: 1;
+				grid-row:4/5;
+			}
+
+			.slider2-waarde-rechts{
+				grid-column: 6;
+				grid-row:4/5;
+			}
+
+				.slider,.slider2{
+					grid-column: 2/5;
+				    -webkit-appearance: none;  /* Override default CSS styles */
+				    appearance: none;
+				    width: 100%; 
+				    height: 2px; 
+				    background: black;
+				    outline: none;
+				    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+				    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+				    transition: opacity .2s;
+				}
+
+				.slider{
+					grid-row:2/3;
+				}
+
+				.slider2{
+					grid-row:4/5;
+				}
+
+				.slider:hover,.slider2:hover {
+				    opacity: 1;
+
+				}
+				.slider::-webkit-slider-thumb,.slider2::-webkit-slider-thumb {
+				    -webkit-appearance: none; /* Override default look */
+				    appearance: none;
+				    width: 100px; /* Set a specific slider handle width */
+				    height: 40px; /* Slider handle height */
+				    cursor: pointer; /* Cursor on hover */
+				    border-radius: 15px;
+				}
+				.slider::-webkit-slider-thumb{
+					background: #00AEEF;
+				}
+
+				.slider2::-webkit-slider-thumb{
+					background: #00AEEF;
+				}
+
+				.slider::-moz-range-thumb,.slider2::-moz-range-thumb {
+				    width: 25px; /* Set a specific slider handle width */
+				    height: 25px; /* Slider handle height */
+				    background: #00AEEF; /* Green background */
+				    cursor: pointer; /* Cursor on hover */
+				}
+
+				.deslider span{
+					display: flex;
+					justify-content: center;
+					margin-bottom: 0 auto;
+					top: -10;
+					grid-column: 2/3;
+				}
+
 
 				/*Toestellen*/
 
@@ -385,7 +537,6 @@ body{
 				color: red;
 				display: flex;
 				font-size: 130%;
-				/*line-height: -10%;*/
 				justify-content: center;
 				font-family: "Benfont", sans-serif;
 			}
@@ -403,7 +554,7 @@ body{
 
 				.telefoon1-img,.telefoon2-img,.telefoon3-img{
 					background-repeat: no-repeat;
-					background-size:45%;
+					background-size:55%;
 					background-position: top;
 				}
 
@@ -576,6 +727,8 @@ body{
 						.keuzemenu1,.keuzemenu2,.keuzemenu3{
 							display: grid;
 							grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+							/*grid-template-rows: 3fr 0.8fr;*/
+							/*height: 10%;*/
 							grid-column: 2/3;
 						}
 
@@ -592,8 +745,8 @@ body{
 				.vergelijk-lijst{
 					display:grid;
 					height: 160vh;
-					grid-template-columns: 1fr 1fr 1fr 8%;
-					grid-template-rows: 30% 25% 25% 25% 25% 25%;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+					grid-template-rows: 30% 25% 25% 25% 5% 25%;
 				}
 
 				#blur{
@@ -673,14 +826,24 @@ body{
 								background-position: center;
 							}
 
-							.plus{
+							#vergelijk-telefoon-3{
+								display: none;
+								background-image: url("../Afbeeldingen/Toestellen/iPhone-7.gif");
+								grid-column: 4/5;
+								background-size: 55%;
+								background-repeat: no-repeat;
+								background-position: center;
+							}
+
+							#plus{
 								background-image: url("../Afbeeldingen/add.svg");
 								background-position: center;
 								background-repeat: no-repeat;
 								background-size: 50%;
 								grid-column: 4/5;
 								background-color: #00AEEF;
-								height: 20%;
+								height: 22%;
+								width: 35%;
 								align-self: center;
 								border-radius: 15px;
 							}
@@ -691,7 +854,7 @@ body{
 								position: fixed;
 								bottom:-1000px;
 								z-index: 2;
-								width: 800px;
+								width: 1000px;
 								height: 0px;
 								background-color: white;
 								box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
@@ -705,23 +868,48 @@ body{
 								background-size: 50%;
 								width: 50px;
 								height: 50px;
-								margin-left: 94%; /*Dit is natuurlijk niet meer recht*/
+								margin-left: 95%; /*Dit is natuurlijk niet meer recht*/
 								grid-row:1/2;
 							}
 
 							.pop-up-telefoons{
 								display: grid;
 								grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-								grid-template-rows: 0.5fr 3fr;
+								grid-template-rows: 0.5fr 3fr 1fr;
 								width: 100%;
-								height: 50%;
+								height: 70%;
 							}
+
+								.pop-up-telefoons h4{
+									display: flex;
+									justify-content: center;
+									font-family: "Benfont", sans-serif;
+									font-size: 120%;
+
+								}
 
 							.pop-up-telefoon-1,.pop-up-telefoon-2,.pop-up-telefoon-3{
 								grid-row:2/3;
 								background-size: contain;
 								background-repeat: no-repeat;
 								background-position: top;
+								border: 1px solid rgba(0,0,0,0.1);
+							}
+
+							.pop-up-tekst-1,.pop-up-tekst-2,.pop-up-tekst-3{
+								grid-row:3/4;
+							}
+
+							.pop-up-tekst-1{
+								grid-column: 2/3;
+							}
+
+							.pop-up-tekst-2{
+								grid-column: 3/4;
+							}
+
+							.pop-up-tekst-3{
+								grid-column: 4/5;
 							}
 
 							.pop-up-telefoon-1{
@@ -739,12 +927,26 @@ body{
 								grid-column:4/5;
 							}
 
-							#kiestelefoon1,#kiestelefoon2{
+							#kiestelefoon1,#kiestelefoon2,#kiestelefoon3{
 									color: white;
 									background-color: black;
 									border:none;
 									height: 20%;
-									border-radius: 15px;
+									margin-bottom: 15%;
+									border-radius: 20px;
+									font-family: "Benfont", sans-serif;
+									font-size: 100%;
+							}
+
+							#kiestelefoon1:hover,#kiestelefoon2:hover,#kiestelefoon3:hover{
+									color: rgba(255,255,255,0.9);
+									background-color: rgba(0,0,0,0.9);
+							}
+
+							.vergelijk-toestel-naam{
+								font-family: "Benfont", sans-serif;
+								font-size: 120%;
+								/*box-shadow: 3px 3px 3px rgba(0,0,0,0.1);*/
 							}
 
 							#kiestelefoon1{
@@ -755,6 +957,11 @@ body{
 							#kiestelefoon2{
 								grid-row:6/7;
 								grid-column: 3/4;
+							}
+							#kiestelefoon3{
+								display: none;
+								grid-row:6/7;
+								grid-column: 4/5;
 							}
 
 					/*GEKOZEN*/
