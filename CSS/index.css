@@ -36,8 +36,26 @@ body{
     margin-top: 20px;
 }
 
+.content-gekozen{
+	z-index: 2;
+    display: grid;
+    grid-template-rows: 1% 0.3fr 10fr; /* DIT ZORGT VOOR ECHT VEEL RUIMTE*/
+    grid-column: 1/4;
+    grid-template-columns: 20% 60% 15% 5%;
+    margin-top: 20px;
+}
+
+.content-verlengd{
+	z-index: 2;
+    display: grid;
+    grid-template-rows: 1% 1% 100%; /* DIT ZORGT VOOR ECHT VEEL RUIMTE*/
+    grid-column: 1/4;
+    grid-template-columns: 20% 60% 15% 5%;
+    margin-top: 20px;
+}
+
 	.ananas{
-		background-image: url("../Afbeeldingen/ananas.png");
+		background-image: url("../Afbeeldingen/ananas.gif");
 		background-position: -40% 50%; /* horizontaal% verticaal%*/
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -63,10 +81,22 @@ body{
 		grid-row:2/4;
 	}
 
+	.ananas-verlengd{
+		background-image: url("../Afbeeldingen/ananas-gif.mp4");
+		background-position:  -40% 70%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 100%;
+		grid-column: 3/4;
+		grid-row:2/4;
+	}
+
 		.ananas-tekst{
 			font-family: "Benfont", sans-serif;
-			font-size: 160%;
-			text-align: center;
+			font-size: 150%;
+			text-align: left;
+			background-color: rgba(255,255,255,0.3);
+			padding: 3%;
+			border-radius: 15px;
 		}
 
 		.tekst-lijn{
@@ -79,6 +109,14 @@ body{
 
 		.tekst-lijn-vergelijk{
 			  width: 250px; 
+			  height: 200px;  
+			  border: solid 5px #000;
+			  border-color: transparent #00AEEF transparent transparent;
+			  border-radius: 30%/100px 100px 100px 0;
+		}
+
+		.tekst-lijn-verlengd{
+			  width: 180px; 
 			  height: 200px;  
 			  border: solid 5px #000;
 			  border-color: transparent #00AEEF transparent transparent;
@@ -692,6 +730,10 @@ body{
 									
 								}
 
+/*								input[type=button]:focus{
+									background-color: red;
+								}*/
+
 								form > input{
 									display: block;
 									grid-row:1/2;
@@ -728,17 +770,29 @@ body{
 							display: grid;
 							grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
 							/*grid-template-rows: 3fr 0.8fr;*/
-							/*height: 10%;*/
+							height: 5%;
 							grid-column: 2/3;
 						}
 
-						.keuzemenu1 > div, .keuzemenu2 > div, .keuzemenu3 > div{
-							display: grid;
-							grid-template-rows: 0.3fr 2fr 0.6fr;
-							justify-content: center;
-							background-color: white;
-							border: 1px solid rgba(0,0,0,0.1);
+						.keuzemenu1{
+							grid-row:1/2;
 						}
+
+						.keuzemenu2{
+							grid-row:2/3;
+						}
+
+						.keuzemenu3{
+							grid-row:3/4;
+						}
+
+							.keuzemenu1 > div, .keuzemenu2 > div, .keuzemenu3 > div{
+								display: grid;
+								grid-template-rows: 0.3fr 2fr 0.6fr;
+								justify-content: center;
+								background-color: white;
+								border: 1px solid rgba(0,0,0,0.1);
+							}
 
 					/*Vergelijk*/
 
@@ -872,6 +926,13 @@ body{
 								grid-row:1/2;
 							}
 
+								#popup h1{
+									font-family: "Benfont", sans-serif;
+									display: flex;
+									justify-content: center;
+									color: #00AEEF;
+								}
+
 							.pop-up-telefoons{
 								display: grid;
 								grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -884,7 +945,7 @@ body{
 									display: flex;
 									justify-content: center;
 									font-family: "Benfont", sans-serif;
-									font-size: 120%;
+									font-size: 150%;
 
 								}
 
@@ -893,7 +954,7 @@ body{
 								background-size: contain;
 								background-repeat: no-repeat;
 								background-position: top;
-								border: 1px solid rgba(0,0,0,0.1);
+								/*border: 1px solid rgba(0,0,0,0.1);*/
 							}
 
 							.pop-up-tekst-1,.pop-up-tekst-2,.pop-up-tekst-3{
@@ -1046,26 +1107,34 @@ body{
 	                	.jouw-gegevens,.bestelling{
 	                		margin-top: 10%;
 	                		display: grid;
-	                		grid-template-columns: 10% 45% 35% 10% ;
+	                		grid-template-columns: 10% 50%;
 	                		box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
 	                		padding: 3%;
 	                	}
 
 	                	.bestelling{
-	                		grid-template-rows: 20% 60% 20%;
+	                		grid-template-rows: 60 25% 15%;
+	                	}
+
+	                	#bestelling-prijs{
+	                		font-family: "Benfont", sans-serif;
+	                		color: #00AEEF;
+	                		grid-row:3/4;
+	                		grid-column: 2/4;
 	                	}
 
 	                	.bestelling-toestel{
-	                		background-image: url("../Afbeeldingen/Toestellen/s8.png");
-	                		background-position: center;
-							background-repeat: no-repeat;
-	                		background-size: 80%;				                		
-	                		grid-column: 2/3;
-	                		grid-row:2/3;
-	                		width: 60%;
+	                		/*background-image: url("../Afbeeldingen/Toestellen/s8.png");*/
+	                		height: 60%;
+	                		/*background-position: center;*/
+							/*background-repeat: no-repeat;*/
+	                		/*background-size: 80%;				                		*/
+	                		grid-column: 2/2;
+	                		grid-row:2/2;
 	                	}
 
 	                	.jouw-gegevens h1,.bestelling h1{
+	                		font-family: "Benfont", sans-serif;
 	                		grid-column:2/3;
 	                		color: #00AEEF;
 	                		font-size: 140%;
@@ -1080,11 +1149,20 @@ body{
 	                		justify-content: left;
 	                	}
 
-	                	#controle-rechts{
+	                	#controle-rechts,#controle-gegevens-rechts{
 	                		grid-column: 3/4;
 	                		font-family: "Benfont", sans-serif;
 	                		font-size: 100%;
 	                		justify-content: left;
+	                	}
+
+	                	#controle-gegevens-rechts{
+	                		font-family: "Benfont", sans-serif;
+	                		font-size: 80%;
+	                		/*color: #00AEEF;*/
+	                		grid-row:2/2;
+	                		/*line-height: 30px;*/
+	                		/*margin: 10% 0%;*/
 	                	}
 
 	                	.jouw-gegevens{
@@ -1193,6 +1271,7 @@ body{
 	                .bedankje{
 	                	display: grid;
 	                	grid-template-columns: 1fr 3fr 1fr;
+	                	background-color: rgba(255,255,255,0.3);
 	                }
 
 	                .bedankje h1, .bedankje h2{
