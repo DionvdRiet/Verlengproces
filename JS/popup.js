@@ -9,6 +9,25 @@ function popup(){
 	document.getElementById('blur').style.transition = "filter 0.5s";
 }
 
+function tekstPop1(){
+		document.getElementById('pop1').style.color = "#00AEEF";
+}
+
+function tekstPop2(){
+		document.getElementById('pop2').style.color = "#00AEEF";
+}
+
+function tekstPop3(){
+		document.getElementById('pop3').style.color = "#00AEEF";
+}
+
+
+function tekstDown(){
+		document.getElementById('pop1').style.color = "black";
+		document.getElementById('pop2').style.color = "black";
+		document.getElementById('pop3').style.color = "black";
+}
+
 function popdown(){
 	document.getElementById('popup').style.opacity = "0";
 	document.getElementById('popup').style.display = "block";
@@ -23,6 +42,7 @@ function gekozen(){
 	document.getElementById('blur').style.transition = "filter 0.5s";
 	document.getElementById('vergelijk-telefoon-3').style.display = "block";
 	document.getElementById('kiestelefoon3').style.display = "block";
+	document.getElementById('ananas-tekst').innerHTML = "Zoveel keuze, ik zou het niet weten hoor!";
 	document.getElementById('plus').style.display = "none";
 	document.getElementById('abonnement').innerHTML = "<tr><th id='onderwerp'>Abonnement</th><th class='vergelijk-toestel-naam'>Huawei P20 lite</th><th class='vergelijk-toestel-naam'>Huawei Mate 20 lite</th> <th class='vergelijk-toestel-naam'>iPhone 7</th></tr><tr><td id='wat'>Belminuten/sms</td><td>100</td><td>300</td><td>500</td></tr><tr><td id='wat'>Internet</td><td>1000 mb</td><td>2000 mb</td><td>2000mb</td></tr><tr><td id='wat'>Prijs</td><td>€16,00 per maand</td><td>€18,00 per maand</td><td>€20,00 per maand</td></tr><tr><td id='wat'>Toestelprijs</td><td>€0,00 per maand</td><td>€0,00 per maand</td><td>€0,00 per maand</td></tr>"
 	document.getElementById('algemeen').innerHTML = "<tr><th id='onderwerp'>Abonnement</th><th></th><th></th></tr><tr><td id='wat'>Belminuten/sms</td><td>100</td><td>300</td><td>500</td></tr><tr><td id='wat'>Internet</td><td>1000 mb</td><td>2000 mb</td><td>2000mb</td></tr><tr><td id='wat'>Prijs</td><td>€16,00 per maand</td><td>€18,00 per maand</td><td>€20,00 per maand</td></tr><tr><td id='wat'>Toestelprijs</td><td>€0,00 per maand</td><td>€0,00 per maand</td><td>€0,00 per maand</td></tr>"
@@ -35,7 +55,3 @@ function gekozen(){
 	document.getElementById('vergelijk-lijst').style.backgroundColor = "blue";
 }
 
-function slidertest(){
-	document.getElementById('slider').style.transition = "opacity 0.3s ease-in-out";
-	document.getElementById('slider').style.opacity = "1";
-}

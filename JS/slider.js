@@ -53,4 +53,8 @@ function changeInputM(y)
 	}
 }
 
+function slidertest(){
+	document.getElementById('slider').style.transition = "opacity 0.3s ease-in-out";
+	document.getElementById('slider').style.opacity = "1";
+}
 

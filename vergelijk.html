@@ -26,7 +26,7 @@
 	<div class="grid">
 		<div class="content">	
 			<div class="ananas-vergelijk">
-				<h1 class="ananas-tekst">Wil je een 3e telefoon toevoegen om te vergelijken? <span class="blue">Klik</span> op + aan de rechterkant
+				<h1 class="ananas-tekst" id="ananas-tekst">Wil je een 3e telefoon toevoegen om te vergelijken? <span class="blue">Klik</span> op + aan de rechterkant
 				</h1>
 				<div class="tekst-lijn-vergelijk"></div>
 			</div>
@@ -41,13 +41,14 @@
 				</div>
 				<div id="popup">
 					<div id="weg-popup" onclick="popdown()"></div>
+					<h1>Kies een telefoon om te vergelijken:</h1>
 					<div class="pop-up-telefoons">
-						<div class="pop-up-telefoon-1"></div>
-						<div class="pop-up-telefoon-2"></div>
-						<div class="pop-up-telefoon-3" onclick="gekozen()"></div>
-						<h4 class="pop-up-tekst-1">Huawei P20</h4>
-						<h4 class="pop-up-tekst-2">iPhone 6s</h4>
-						<h4 class="pop-up-tekst-3">iPhone 7</h4>
+						<div class="pop-up-telefoon-1" onmouseover="tekstPop1()" onmouseleave="tekstDown()"></div>
+						<div class="pop-up-telefoon-2" onmouseover="tekstPop2()" onmouseleave="tekstDown()"></div>
+						<div class="pop-up-telefoon-3" onmouseover="tekstPop3()" onmouseleave="tekstDown()" onclick="gekozen()"></div>
+						<h4 class="pop-up-tekst-1" id="pop1">Huawei P20</h4>
+						<h4 class="pop-up-tekst-2" id="pop2">iPhone 6s</h4>
+						<h4 class="pop-up-tekst-3" id="pop3">iPhone 7</h4>
 					</div>
 				</div>
 				<div  id="blur" class="vergelijk-lijst" id="vergelijk-lijst">
