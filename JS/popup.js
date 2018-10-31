@@ -11,14 +11,17 @@ function popup(){
 
 function tekstPop1(){
 		document.getElementById('pop1').style.color = "#00AEEF";
+		// document.getElementById('pop1').style.fontSize = "180%";
 }
 
 function tekstPop2(){
 		document.getElementById('pop2').style.color = "#00AEEF";
+		// document.getElementById('pop2').style.fontSize = "180%";
 }
 
 function tekstPop3(){
 		document.getElementById('pop3').style.color = "#00AEEF";
+		// document.getElementById('pop3').style.fontSize = "180%";
 }
 
 
@@ -26,6 +29,9 @@ function tekstDown(){
 		document.getElementById('pop1').style.color = "black";
 		document.getElementById('pop2').style.color = "black";
 		document.getElementById('pop3').style.color = "black";
+		document.getElementById('pop1').style.fontSize = "150%";
+		document.getElementById('pop2').style.fontSize = "150%";
+		document.getElementById('pop3').style.fontSize = "150%";
 }
 
 function popdown(){

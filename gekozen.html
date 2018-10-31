@@ -46,16 +46,31 @@
 					<div class="gekozen-telefoon"></div>
 					<div>
 						<h1>Samsung Galaxy S8</h1> 
-						<h2>2000mb</h2>
-						<h2>Toestelprijs eenmalig €0,00</h2>
+						<h2><span id="demo">18,00</span> Belminuten / SMS</h2>
+						<h2 ><span id="demo2"> 2000mb</span> Mb</h2>
 						<h2>€18,00 per maand</h2>
+						<h2>Toestelprijs eenmalig €0,00</h2>
 					</div>
-						<input type="button" name="" class="gekozen-wijzig" value="WIJZIG ABONNEMENT">
+						<input type="button" name="" class="gekozen-wijzig"  onclick="slidertest()" value="WIJZIG ABONNEMENT">
 						<input type="button" name="" class="gekozen-kiezen" value="IK WIL DIT ABONNEMENT" onclick="location.href='controle.html'">
 				</div>
-				<div class="leegte"></div>
+				<div class="deslider" id="slider">
+					<h4 class="slider-tekst-1">Internet (4g)</h4>
+					<h4 class="slider-tekst-2">Belminuten / SMS</h4>
+					<input type="range" min="0" max="600" value="" step="300" class="slider" onchange="changeInputB(this);" id="myRange" >
+					<input type="range" min="0" max="10000" value="" step="1000" class="slider2" id="myRange2" onchange="changeInputM(this);">
+					<div class="slider-waarde-links">0</div>
+					<div class="slider-waarde-rechts">onbeperkt</div>
+					<div class="slider2-waarde-links">0</div>
+					<div class="slider2-waarde-rechts">onbeperkt</div>
+					<input type="button" name="" class="twee-jaar" value="TWEE JAAR">
+					<input type="button" name="" class="een-jaar" value="EEN JAAR">
+					<input type="button" name="" class="maand" value="MAAND">
+				</div>
 			</div>
 		</div>
 	</div>
+	<script src="JS/slider.js"></script>
+	<script src="JS/popup.js"></script>
 </body>
 </html>
