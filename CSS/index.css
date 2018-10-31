@@ -55,15 +55,6 @@ body{
 }
 
 	.ananas{
-<<<<<<< HEAD
-		/*background-image: url("../Afbeeldingen/ananas.gif");*/
-		/*background-position: -40% 50%; /* horizontaal% verticaal%*/*/
-=======
-		background-image: url("../Afbeeldingen/ananas.gif");
-		background-position: -40% 50%; /* horizontaal% verticaal%*/
->>>>>>> origin/master
-		background-repeat: no-repeat;
-		/*background-size: 100%;*/
 		grid-column: 3/4;
 		grid-row:2/4;
 	}
@@ -73,29 +64,17 @@ body{
 	}
 
 	.ananas-links{
-		/*background-image: url("../Afbeeldingen/ananas.png");*/
-		background-position: -40% 50%; /* horizontaal% verticaal%*/
-		background-repeat: no-repeat;
-		background-size: 80%;
 		grid-column: 1/2;
 		grid-row:2/4;
 	}
 
 	.ananas-vergelijk{
-		/*background-image: url("../Afbeeldingen/ananas.png");*/
-		background-position:  0% 20%; /* horizontaal% verticaal%*/
-		background-repeat: no-repeat;
-		background-size: 80%;
 		grid-column: 1/2;
 		grid-row:2/4;
 	}
 
 	.ananas-verlengd{
-<<<<<<< HEAD
 		/*background-image: url("../Afbeeldingen/ananas-gif.mp4");*/
-=======
-		background-image: url("../Afbeeldingen/ananas-gif.mp4");
->>>>>>> origin/master
 		background-position:  -40% 70%; /* horizontaal% verticaal%*/
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -597,28 +576,18 @@ body{
 					font-size: 120%;
 				}
 
-            .telefoon-1, .telefoon-2, .telefoon-3 {
-                display: flex;
-                justify-content: center;
-                background-color: white;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
+			.telefoon-1,.telefoon-2,.telefoon-3{
+				display: flex;
+				justify-content: center;
+				background-color: white;
+			}
 
-            .samsung1-img, .samsung2-img, .samsung3-img {
-                background-repeat: no-repeat;
-                background-size:contain;
-            }
-            .apple1-img, .apple2-img, .apple3-img {
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-            .huawei1-img, .huawei2-img, .huawei3-img {
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
+				.telefoon1-img,.telefoon2-img,.telefoon3-img{
+					background-repeat: no-repeat;
+					background-size:55%;
+					background-position: top;
+				}
 
-<<<<<<< HEAD
 				.telefoon1-img{
 					background-image: url("../Afbeeldingen/Toestellen/s8.png");
 				}
@@ -630,70 +599,6 @@ body{
 				.telefoon3-img{
 					background-image: url("../Afbeeldingen/Toestellen/p10.jpg");
 				}
-=======
-            /*Samsung toestel afbeeldingen begin*/
-            .samsung1-img {
-                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy S8.png");
-            }
-
-            .samsung2-img {
-                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy S9.jpg");
-            }
-
-            .samsung3-img {
-                background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy Note 9.jpg");
-            }
-
-            /*Samsung toestel afbeeldingen eind*/
-
-            /*Apple toestel afbeeldingen begin*/
-            .apple1-img {
-                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 6s.png");
-            }
-
-            .apple2-img {
-                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 7.gif");
-            }
-
-            .apple3-img {
-                background-image: url("../Afbeeldingen/Toestellen/Apple Iphone Xs Max gold.jpg");
-            }
-
-            /*Apple toestel afbeeldingen eind*/
-
-            /*Apple toestel afbeeldingen begin*/
-.huawei1-img {
-    background-image: url("../Afbeeldingen/Toestellen/Huawei P smart.png");
-}
-
-.huawei2-img {
-    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 lite.jpeg");
-}
-
-.huawei3-img {
-    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 pro.png");
-}
-
-            /*Apple toestel afbeeldingen eind*/
-
-            .telefoon1-img {
-                background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-			.telefoon2-img{
-				background-image: url("../Afbeeldingen/Toestellen/mate20.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-			}
-
-            .telefoon3-img {
-                background-image: url("../Afbeeldingen/Toestellen/p20.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
->>>>>>> origin/master
 
 				.telefoon-1{
 					grid-column: 2/3;
@@ -719,7 +624,7 @@ body{
 						grid-template-columns: 20% 80%;
 						width: 100%;
 						height: 100%;
-						margin-top: 5%;
+						margin-top: 5%; DIT IS WEL HANDIG VOOR WAT RUIMTE 
 						background-color: white;
 						grid-column: 1/4;
 						grid-row:4/5;
@@ -749,6 +654,7 @@ body{
 
 
 								.form-merk{
+									grid-row:1/2;
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
@@ -775,6 +681,7 @@ body{
 
 							form{
 								display: grid;
+								grid-template-rows: repeat(5,20%);
 							}
 
 								fieldset{
@@ -786,9 +693,11 @@ body{
 								}
 
 								#een,#twee,#drie,#vier{
+									/*background-color: red;*/
 									display: grid;
 									grid-template-columns: 20% 70% 10%;
 									height: 10%;
+									/*grid-template-rows: repeat(4,1%);*/
 								}
 
 								/*DIVS RONDOMFORM INPUT CHECKBOXJES*/
