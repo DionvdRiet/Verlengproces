@@ -55,26 +55,43 @@ body{
 }
 
 	.ananas{
+<<<<<<< HEAD
+=======
+		background-image: url("../Afbeeldingen/ananas.gif");
+		background-position: -40% 50%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 100%;
+>>>>>>> parent of b67d0b5... Ananas gif!
 		grid-column: 3/4;
 		grid-row:2/4;
 	}
 
-	.ananas-video{
-		/*background-color: red;*/
-	}
-
 	.ananas-links{
+<<<<<<< HEAD
+=======
+		background-image: url("../Afbeeldingen/ananas.png");
+		background-position: -40% 50%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 80%;
+>>>>>>> parent of b67d0b5... Ananas gif!
 		grid-column: 1/2;
 		grid-row:2/4;
 	}
 
 	.ananas-vergelijk{
+<<<<<<< HEAD
+=======
+		background-image: url("../Afbeeldingen/ananas.png");
+		background-position:  0% 20%; /* horizontaal% verticaal%*/
+		background-repeat: no-repeat;
+		background-size: 80%;
+>>>>>>> parent of b67d0b5... Ananas gif!
 		grid-column: 1/2;
 		grid-row:2/4;
 	}
 
 	.ananas-verlengd{
-		/*background-image: url("../Afbeeldingen/ananas-gif.mp4");*/
+		background-image: url("../Afbeeldingen/ananas-gif.mp4");
 		background-position:  -40% 70%; /* horizontaal% verticaal%*/
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -92,8 +109,8 @@ body{
 		}
 
 		.tekst-lijn{
-			  width: 100px; 
-			  height: 100px;  
+			  width: 220px; 
+			  height: 300px;  
 			  border: solid 5px #000;
 			  border-color: transparent #00AEEF transparent transparent;
 			  border-radius: 50%/100px 100px 100px 0;
@@ -589,15 +606,15 @@ body{
 				}
 
 				.telefoon1-img{
-					background-image: url("../Afbeeldingen/Toestellen/s8.png");
+					background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
 				}
 
 				.telefoon2-img{
-					background-image: url("../Afbeeldingen/Toestellen/A6.png");
+					background-image: url("../Afbeeldingen/Toestellen/mate20.png");
 				}
 
 				.telefoon3-img{
-					background-image: url("../Afbeeldingen/Toestellen/p10.jpg");
+					background-image: url("../Afbeeldingen/Toestellen/p20.png");
 				}
 
 				.telefoon-1{
@@ -791,7 +808,7 @@ body{
 				.vergelijk-lijst{
 					display:grid;
 					height: 160vh;
-					grid-template-columns: 0.8fr 1fr 1fr 1fr;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
 					grid-template-rows: 30% 25% 25% 25% 5% 25%;
 				}
 
@@ -859,15 +876,14 @@ body{
 					}
 
 							.vergelijk-telefoon-1{
-								background-image: url("../Afbeeldingen/Toestellen/s7.jpg");
+								background-image: url("../Afbeeldingen/Toestellen/p20.png");
 								grid-column: 2/3;
-								background-size: 140%;
 								background-repeat: no-repeat;
-								background-position: left;
+								background-position: center;
 							}
 
 							.vergelijk-telefoon-2{
-								background-image: url("../Afbeeldingen/Toestellen/s8.png");
+								background-image: url("../Afbeeldingen/Toestellen/mate20.png");
 								grid-column: 3/4;
 								background-repeat: no-repeat;
 								background-position: center;
@@ -875,7 +891,7 @@ body{
 
 							#vergelijk-telefoon-3{
 								display: none;
-								/*background-image: url("../Afbeeldingen/Toestellen/iPhone-7.gif");*/
+								background-image: url("../Afbeeldingen/Toestellen/iPhone-7.gif");
 								grid-column: 4/5;
 								background-size: 55%;
 								background-repeat: no-repeat;
@@ -967,17 +983,17 @@ body{
 							}
 
 							.pop-up-telefoon-1{
-								background-image: url("../Afbeeldingen/Toestellen/P10.jpg");
+								background-image: url("../Afbeeldingen/Toestellen/Huawei-P10.jpg");
 								grid-column:2/3;
 							}
 
 							.pop-up-telefoon-2{
-								background-image: url("../Afbeeldingen/Toestellen/iPhone-6s.gif");
+								background-image: url("../Afbeeldingen/Toestellen/iPhone-7.gif");
 								grid-column:3/4;
 							}
 
 							.pop-up-telefoon-3{
-								background-image: url("../Afbeeldingen/Toestellen/iPhone-7.png");
+								background-image: url("../Afbeeldingen/Toestellen/iPhone-6s.png");
 								grid-column:4/5;
 							}
 
