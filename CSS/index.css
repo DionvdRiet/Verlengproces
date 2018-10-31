@@ -606,15 +606,15 @@ body{
 				}
 
 				.telefoon1-img{
-					background-image: url("../Afbeeldingen/Toestellen/p-smart.png");
+					background-image: url("../Afbeeldingen/Toestellen/s8.png");
 				}
 
 				.telefoon2-img{
-					background-image: url("../Afbeeldingen/Toestellen/mate20.png");
+					background-image: url("../Afbeeldingen/Toestellen/A6.png");
 				}
 
 				.telefoon3-img{
-					background-image: url("../Afbeeldingen/Toestellen/p20.png");
+					background-image: url("../Afbeeldingen/Toestellen/p10.jpg");
 				}
 
 				.telefoon-1{
@@ -671,29 +671,135 @@ body{
 
 
 								.form-merk{
-									grid-row:1/2;
+									position: relative;
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
+								.lbl_container {
+								    display: block;
+								    position: relative;
+								    padding-left: 35px;
+								    margin-bottom: 12px;
+								    margin-left:22px;
+								    cursor: pointer;
+								    font-size: 22px;
+								    -webkit-user-select: none;
+								    -moz-user-select: none;
+								    -ms-user-select: none;
+								    user-select: none;
+								}
+
+								    /* Hide the browser's default checkbox */
+								.lbl_container input {
+								    position: absolute;
+								    opacity: 0;
+								    cursor: pointer;
+								    height: 0;
+								    width: 0;
+								}
+
+								/* Create a custom checkbox */
+								.checkmark {
+								    position: absolute;
+								    top: 0;
+								    left: 0;
+								    height: 20px;
+								    width: 20px;
+								    border: 1px solid grey;
+								    border-radius: 1px;
+								}
+
+								/* On mouse-over, add a grey background color */
+								.lbl_container:hover input ~ .checkmark {
+								    background-color: #ccc;
+								}
+
+								/* When the checkbox is checked, add a blue background */
+								.lbl_container input:checked ~ .checkmark {
+								    background-color: #2196F3;
+								}
+
 								.form-ram{
-									grid-row:2/3;
+									position:relative;
+									/*padding: 10% 0%;*/
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
 								.form-opslag{
-									grid-row:3/4;
+									position:relative;
+									/*padding: 10% 0%;*/
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
 								.form-vier{
-									grid-row:4/5;
+									position:relative;
+									/*padding: 10% 0%;*/
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
 
 								.form-vijf{
-									grid-row:5/6;
+									position:relative;
+									/*padding: 10% 0%;*/
 									border-bottom: 1px solid rgba(0,0,0,0.3);
 								}
+
+								.samsung1-img, .samsung2-img, .samsung3-img {
+								    background-repeat: no-repeat;
+								    background-size:contain;
+								}
+								.apple1-img, .apple2-img, .apple3-img {
+								    background-repeat: no-repeat;
+								    background-size: contain;
+								}
+								.huawei1-img, .huawei2-img, .huawei3-img {
+								    background-repeat: no-repeat;
+								    background-size: contain;
+								}
+
+								/*Samsung toestel afbeeldingen begin*/
+								.samsung1-img {
+								    background-image: url("../Afbeeldingen/Toestellen/s8.png");
+								    background-position: center;
+								}
+
+								.samsung2-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy S9.jpg");
+								}
+
+								.samsung3-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Samsung Galaxy Note 9.jpg");
+								}
+
+								/*Samsung toestel afbeeldingen eind*/
+
+								/*Apple toestel afbeeldingen begin*/
+								.apple1-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 6s.png");
+								}
+
+								.apple2-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 7.gif");
+								}
+
+								.apple3-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Apple Iphone Xs Max gold.jpg");
+								}
+
+								/*Apple toestel afbeeldingen eind*/
+
+								/*Huawei toestel afbeeldingen begin*/
+								.huawei1-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Huawei P smart.png");
+								}
+
+								.huawei2-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 lite.jpeg");
+								}
+
+								.huawei3-img {
+								    background-image: url("../Afbeeldingen/Toestellen/Huawei Mate 20 pro.png");
+								}
+								/*Huawei toestel afbeeldingen eind*/
 
 
 							form{
@@ -733,6 +839,8 @@ body{
 									grid-row:4/5;
 									
 								}
+
+
 
 								#vier{
 									grid-row:5/6;
@@ -876,14 +984,15 @@ body{
 					}
 
 							.vergelijk-telefoon-1{
-								background-image: url("../Afbeeldingen/Toestellen/p20.png");
+								background-image: url("../Afbeeldingen/Toestellen/s7.png");
 								grid-column: 2/3;
+								background-size: 55%;
 								background-repeat: no-repeat;
 								background-position: center;
 							}
 
 							.vergelijk-telefoon-2{
-								background-image: url("../Afbeeldingen/Toestellen/mate20.png");
+								background-image: url("../Afbeeldingen/Toestellen/s8.png");
 								grid-column: 3/4;
 								background-repeat: no-repeat;
 								background-position: center;
@@ -983,7 +1092,7 @@ body{
 							}
 
 							.pop-up-telefoon-1{
-								background-image: url("../Afbeeldingen/Toestellen/Huawei-P10.jpg");
+								background-image: url("../Afbeeldingen/Toestellen/P10.jpg");
 								grid-column:2/3;
 							}
 
