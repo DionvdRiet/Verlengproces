@@ -1,4 +1,5 @@
 var showBrand = [];
+var alleMerken = ["apple", "samsung", "huawei"];
 $(document).ready(function () {
     // id = "apple"
     // id = "samsung"
@@ -10,27 +11,33 @@ $(document).ready(function () {
     // daarna kijken welke brands deze zijn en dan de brands ervan excluden in een forloopje ofso?
     $("#apple").change(function () {
         if (this.checked == true) {
+            console.log("this id: " + this.id.toString());
             AddBrandToShowList("apple");
         }
         else if (this.checked == false) {
+            console.log(this.id.toString());
             DeleteBrandFromList(this.id.toString());
         }
         ShowPhones();
     });
     $("#huawei").change(function () {
         if (this.checked == true) {
+            console.log("this id: " + this.id.toString());
             AddBrandToShowList("huawei");
         }
         else if (this.checked == false) {
+            console.log(this.id.toString());
             DeleteBrandFromList(this.id.toString());
         }
         ShowPhones();
     });
     $("#samsung").change(function () {
         if (this.checked == true) {
+            console.log("this id: " + this.id.toString());
             AddBrandToShowList("samsung");
         }
         else if (this.checked == false) {
+            console.log("this id: " + this.id.toString());
             DeleteBrandFromList(this.id.toString());
         }
         ShowPhones();
@@ -60,12 +67,17 @@ function AddBrandToShowList(brandToAdd)
 function ShowPhones()
 {
     if (showBrand.length == 0) {
-        $('#apple').show();
-        $('#samsung').show();
-        $('#huawei').show();
+        alleMerken.forEach(function (merken) {
+            $("." + merken).show();
+        });
     }
     else {
-        for (var i = 0; i < showBrand.length; i++) {
+        for (var i = 0; i < alleMerken.length; i++) {
+            if (showBrand.includes(alleMerken[i])) {
+                $("." + alleMerken[i]).show();
+            } else {
+                $("." + alleMerken[i]).hide();
+            }
         }
     }
     console.log("Einde ShowPhones: " + showBrand);

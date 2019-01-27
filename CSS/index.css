@@ -867,11 +867,11 @@ body{
 
 								/*Apple toestel afbeeldingen begin*/
 								.apple1-img {
-								    background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 6s.png");
+								    background-image: url("../Afbeeldingen/Toestellen/6s.gif");
 								}
 
 								.apple2-img {
-								    background-image: url("../Afbeeldingen/Toestellen/Apple Iphone 7.gif");
+								    background-image: url("../Afbeeldingen/Toestellen/iphone7.png");
 								}
 
 								.apple3-img {
@@ -1184,12 +1184,12 @@ body{
 							}
 
 							.pop-up-telefoon-2{
-								background-image: url("../Afbeeldingen/Toestellen/iPhone-7.gif");
+								background-image: url("../Afbeeldingen/Toestellen/6s.gif");
 								grid-column:3/4;
 							}
 
 							.pop-up-telefoon-3{
-								background-image: url("../Afbeeldingen/Toestellen/iPhone-6s.png");
+								background-image: url("../Afbeeldingen/Toestellen/iPhone7.png");
 								grid-column:4/5;
 							}
 
